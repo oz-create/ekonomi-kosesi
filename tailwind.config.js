@@ -9,7 +9,7 @@ module.exports = {
         'text-gray' : '#181818',
         'sub-menu-border' : 'rgba(0,0,0,.1)',
         'mobile-menu-bg' : 'rgb(19,19,21)',
-        'flag-red': '#E62B34'
+        'flag-red': '#E62B34',
       },
       transitionTimingFunction: {
         'in-expo': 'cubic-bezier(.230,1,.320,1)',
