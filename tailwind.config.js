@@ -10,6 +10,8 @@ module.exports = {
         'sub-menu-border' : 'rgba(0,0,0,.1)',
         'mobile-menu-bg' : 'rgb(19,19,21)',
         'flag-red': '#E62B34',
+        'bg-gray': '#DBDBEA',
+        'secondary-gray': '#efefef'
       },
       transitionTimingFunction: {
         'in-expo': 'cubic-bezier(.230,1,.320,1)',
@@ -24,7 +26,8 @@ module.exports = {
     },
     screens: {
       'tablet': {'max': '1200px'},
-      'phone' : {'max': '360px'}
+      'bigger-phone': {'max': '800px'},
+      'phone' : {'max': '650px'}
     },
   },
   plugins: [],

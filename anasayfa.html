@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="output.css">
 </head>
 <body>
-    <div class="mx-auto w-[1200px]">
+    <div class="mx-auto w-[1200px] tablet:w-full">
         <nav class="h-[90px] tablet:h-[54px] tablet:w-[100%] w-[1200px] mx-auto flex tablet:justify-start justify-between items-center border-b border-b-border-color fixed top-[0px] z-50">
             <div id="menuToggle" class="tablet:grid top-[15px] left-[330px] z-10 w-auto hidden mx-5"> 
                 <input type="checkbox" class="block w-[40px] h-[32px] absolute cursor-pointer opacity-0 z-20">
@@ -55,7 +55,7 @@
                     <a href="" class="text-white text-medium leading-[90px] relative block hover:text-vivid-red transition-color ease-linear duration-100">İletişim</a>
                 </li>
                 <li class="relative">
-                    <a href="" class="text-white text-medium leading-[90px] relative block flex items-center"><img class="" src="https://ekonomikosesi.com/wp-content/plugins/sitepress-multilingual-cms/res/flags/tr.png" alt=""><span class="ml-1 hover:text-vivid-red transition-color ease-linear duration-100">Türkçe</span><i id="languageSubToggle" class='bx bx-chevron-down w-[10px] ml-1'></i></a>
+                    <a href="" class="text-white text-medium leading-[90px] relative flex items-center"><img class="" src="https://ekonomikosesi.com/wp-content/plugins/sitepress-multilingual-cms/res/flags/tr.png" alt=""><span class="ml-1 hover:text-vivid-red transition-color ease-linear duration-100">Türkçe</span><i id="languageSubToggle" class='bx bx-chevron-down w-[10px] ml-1'></i></a>
                     <ul id="languageSubMenu" class="absolute top-auto bg-white w-[220px] left-auto right-0 transition-all ease duration-500 translate-y-[20px] opacity-0">
                         <li class="text-xl font-normal text-text-gray px-[1.5em] py-[1em] relative cursor-pointer after:bg-sub-menu-border after:h-[1px] after:block after:absolute after:bottom-0 after:left-[1.5em] after:right-[1.5em] hover:shadow-[inset_5px_0_0_0_#e62b34] hover:text-vivid-red transition-color ease transition-shadow duration-300"><a href="https://ekonomikosesi.com/magazin/" class="text-xl leading-[1.8] flex items-center"><img src="https://ekonomikosesi.com/wp-content/plugins/sitepress-multilingual-cms/res/flags/en.png" alt=""><span class="ml-1">English (İngilizce)</span></a></li>
                         <li class="text-xl font-normal text-text-gray px-[1.5em] py-[1em] relative cursor-pointer after:bg-sub-menu-border after:h-[1px] after:block after:absolute after:bottom-0 after:left-[1.5em] after:right-[1.5em] hover:shadow-[inset_5px_0_0_0_#e62b34] hover:text-vivid-red transition-color ease transition-shadow duration-300"><a href="https://ekonomikosesi.com/dunya/" class="text-xl leading-[1.8] flex items-center"><img src="https://ekonomikosesi.com/wp-content/plugins/sitepress-multilingual-cms/res/flags/fr.png" alt=""><span class="ml-1">Français (Fransızca)</span></a></li>
@@ -74,7 +74,7 @@
                         <a href="" class="text-white text-medium px-[2em] py-[1em] relative block hover:text-vivid-red transition-color ease-linear duration-100">Gazete Manşetleri</a>
                     </li>
                     <li class="">
-                        <a href="" class="text-white text-medium px-[2em] py-[1em] relative block flex items-center"><span class="hover:text-vivid-red transition-color ease-linear duration-100">Haberler</span><i id="newsSubToggleMobile" class='bx bx-chevron-down w-[10px] absolute right-[-72px]'></i></a>
+                        <a href="" class="text-white text-medium px-[2em] py-[1em] relative  flex items-center"><span class="hover:text-vivid-red transition-color ease-linear duration-100">Haberler</span><i id="newsSubToggleMobile" class='bx bx-chevron-down w-[10px] absolute right-[-72px]'></i></a>
                         <ul id="newsSubMenuMobile" class="top-auto transition-height flex-col items-center ease duration-500 h-[0px] hidden">
                             <li class="text-xl font-normal text-white px-[1.5em] py-[1em] relative cursor-pointer"><a href="https://ekonomikosesi.com/magazin/" class="text-xl leading-[1.8]">Magazin</a></li>
                             <li class="text-xl font-normal text-white px-[1.5em] py-[1em] relative cursor-pointer"><a href="https://ekonomikosesi.com/dunya/" class="text-xl leading-[1.8]">Dünya</a></li>
@@ -113,15 +113,15 @@
             </nav>
         </nav>
     </div>
-          <!-- Swiper -->
-    <div class="swiper relative">
+    <!-- Swiper -->
+    <div class="swiper relative w-full h-[930px] tablet:h-[761px]">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
                     <div class="sliderBg w-full h-full absolute top-0 left-0 bg-[url('https://ekonomikosesi.com/wp-content/uploads/2022/10/sfd0sfd0sfd.png')] bg-no-repeat bg-cover"></div>
                     <div class="sliderBgBlack absolute top-0 w-full h-full"></div>
                     <div class="tablet:w-[90%] w-[1200px] m-auto h-full relative flex flex-col justify-center items-start text-left">
                         <p class="bg-flag-red text-white text-[14px] px-[0.45em] py-[0.5em] font-medium leading-[1.8] left-0 mb-3 uppercase">SOSYAL MEDYA</p>
-                        <h2 class="text-white text-big font-bold max-w-[668px] leading-[1.1] mb-3 tablet:text-[45px] phone:text-[30px] tablet:text-[45px] phone:text-[30px]">Tiktok'ta Pazarlama Nasıl Yapılır?</h2>
+                        <h2 class="text-white text-big font-bold max-w-[668px] leading-[1.1] mb-3 tablet:text-[45px] phone:text-[30px]">Tiktok'ta Pazarlama Nasıl Yapılır?</h2>
                         <div>
                             <span class="text-flag-red text-[16px] font-semibold">admin</span>
                             <span class="font-light text-[1.1rem] opacity-50 text-white before:content-['|'] before:mr-3 before:ml-2">4 ay önce</span>
@@ -290,12 +290,12 @@
                     </div>
                 </div>
             </div>
-            <div class="swiper-pagination"></div>
+            <div class="swiper-pagination top-[775px] tablet:top-[720px]"></div>
             <div class="swiper-button-prev"></div>
             <div class="swiper-button-next"></div>
     </div>
-    <div class="mx-auto w-[1200px] pt-[45px] pb-[30px] relative bg-white">
-        <div class="w-[75%]">
+    <div class="mx-auto w-[1200px] flex phone:flex-col tablet:w-full pt-[45px] pb-[30px] relative bg-white tablet:px-[20px]">
+        <div class="w-[75%] phone:w-[100%]">
             <div class="flex">
                 <h2 class="text-flag-red text-[1.5em] leading-[1.5rem] font-semibold">En <br> Son</h2>
                 <div class="flex items-center flex-wrap px-[0.5em] mx-[0.5em]">
@@ -312,10 +312,10 @@
                     <a href="" class="text-text-gray text-[1.5em] leading-[1.5rem] font-normal opacity-50 px-[0.5em] hover:opacity-100 hover:underline">Spor</a>
                 </div>
             </div>
-            <div class="mt-[1em] -ml-[10px] mb-[20px] flex">
-                <div class="w-[282px] h-[439px] mx-[10px] relative flex flex-col justify-end items-center cursor-pointer overflow-hidden after:w-full after:h-full after:px-[10px] after:bg-gradient-to-b after:to-[rgba(0,0,0,0.8)] after:from-transparent after:absolute after:pointer-events-none">
-                    <img class="w-full h-full object-cover hover:scale-110 transition-all duration-[1200ms]"  src="https://ekonomikosesi.com/wp-content/uploads/2022/10/0sdf0sdf0sdf0sfd-440x271.png" alt="">
-                    <div class="text-left m-[1em] absolute z-10">
+            <div class="mt-[1em] -ml-[10px] phone:ml-0 mb-[20px] flex items-center justify-between relative w-full bigger-phone:flex-wrap">
+                <div class="mx-[10px] phone:mx-0 relative flex flex-col justify-end items-center w-[33%] bigger-phone:w-[45%] phone:w-[100%] h-[439px] cursor-pointer overflow-hidden after:w-full after:h-full after:px-[10px] after:bg-gradient-to-b after:to-[rgba(0,0,0,0.8)] after:from-transparent after:absolute after:pointer-events-none">
+                    <img class="w-full h-full  object-cover hover:scale-110 transition-all duration-[1200ms]"  src="https://ekonomikosesi.com/wp-content/uploads/2022/10/0sdf0sdf0sdf0sfd-440x271.png" alt="">
+                    <div class="text-left p-[1em] absolute z-10 flex flex-col justify-end w-full">
                         <a href="" class="text-white text-[1.5em] font-bold no-underline">İşinizi Büyütmenize Yardımcı Olacak Dijital Pazarlama Araçları</a>
                         <div>
                             <a href="" class="uppercase text-flag-red font-normal text-large no-underline">İş Dünyası</a>
@@ -327,111 +327,111 @@
                         </div>
                     </div>
                 </div>
-                <div class="w-[282px] h-[439px] mx-[10px] relative flex flex-col justify-end items-center cursor-pointer overflow-hidden after:w-full after:h-full after:px-[10px] after:bg-gradient-to-b after:to-[rgba(0,0,0,0.8)] after:from-transparent after:absolute after:pointer-events-none">
-                    <img class="w-full h-full object-cover hover:scale-110 transition-all duration-[1200ms]"  src="https://ekonomikosesi.com/wp-content/uploads/2022/10/0sdf0sdf0sdf0sfd-440x271.png" alt="">
-                    <div class="text-left m-[1em] absolute z-10">
+                <div class="mx-[10px] phone:mx-0 relative flex flex-col justify-end items-center w-[33%] bigger-phone:w-[45%] phone:w-[100%] phone:mt-[20px] h-[439px] cursor-pointer overflow-hidden after:w-full after:h-full after:px-[10px] after:bg-gradient-to-b after:to-[rgba(0,0,0,0.8)] after:from-transparent after:absolute after:pointer-events-none">
+                    <img class="w-full h-full  object-cover hover:scale-110 transition-all duration-[1200ms]"  src="https://ekonomikosesi.com/wp-content/uploads/2022/10/0sdf0sdf0sdf0sfd-440x271.png" alt="">
+                    <div class="text-left p-[1em] absolute z-10 flex flex-col justify-end w-full">
                         <a href="" class="text-white text-[1.5em] font-bold no-underline">İşinizi Büyütmenize Yardımcı Olacak Dijital Pazarlama Araçları</a>
                         <div>
                             <a href="" class="uppercase text-flag-red font-normal text-large no-underline">İş Dünyası</a>
                             <span class="font-normal text-large text-white before:content-['|'] before:mr-3 before:ml-2">4 ay önce</span> 
                         </div>
-                        <div class="flex items-center border-t border-opacity-20 border-t-white pt-[0.8em] mt-[0.8em] ">
+                        <div class="flex items-center border-t border-opacity-20 border-t-white pt-[0.8em] mt-[0.8em]">
                             <i class='bx bx-show text-white mr-[5px]'></i>
                             <span class="text-[0.8em] font-normal text-white">7274</span>
                         </div>
                     </div>
                 </div>
-                <div class="w-[282px] h-[439px] mx-[10px] relative flex flex-col justify-end items-center cursor-pointer overflow-hidden after:w-full after:h-full after:px-[10px] after:bg-gradient-to-b after:to-[rgba(0,0,0,0.8)] after:from-transparent after:absolute after:pointer-events-none">
-                    <img class="w-full h-full object-cover hover:scale-110 transition-all duration-[1200ms]"  src="https://ekonomikosesi.com/wp-content/uploads/2022/10/0sdf0sdf0sdf0sfd-440x271.png" alt="">
-                    <div class="text-left m-[1em] absolute z-10">
+                <div class="mx-[10px] phone:mx-0 relative flex flex-col justify-end items-center w-[33%] bigger-phone:w-[100%] phone:w-[100%] bigger-phone:mt-[20px] h-[439px] cursor-pointer overflow-hidden after:w-full after:h-full after:px-[10px] after:bg-gradient-to-b after:to-[rgba(0,0,0,0.8)] after:from-transparent after:absolute after:pointer-events-none">
+                    <img class="w-full h-full  object-cover hover:scale-110 transition-all duration-[1200ms]"  src="https://ekonomikosesi.com/wp-content/uploads/2022/10/0sdf0sdf0sdf0sfd-440x271.png" alt="">
+                    <div class="text-left p-[1em] absolute z-10 flex flex-col justify-end w-full">
                         <a href="" class="text-white text-[1.5em] font-bold no-underline">İşinizi Büyütmenize Yardımcı Olacak Dijital Pazarlama Araçları</a>
                         <div>
                             <a href="" class="uppercase text-flag-red font-normal text-large no-underline">İş Dünyası</a>
                             <span class="font-normal text-large text-white before:content-['|'] before:mr-3 before:ml-2">4 ay önce</span> 
                         </div>
-                        <div class="flex items-center border-t border-opacity-20 border-t-white pt-[0.8em] mt-[0.8em] ">
-                            <i class='bx bx-show text-white mr-[5px]'></i>
-                            <span class="text-[0.8em] font-normal text-white">7274</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="mt-[1em] -ml-[10px] mb-[20px] flex">
-                <div class="w-[282px] h-[439px] mx-[10px] relative flex flex-col justify-end items-center cursor-pointer overflow-hidden after:w-full after:h-full after:px-[10px] after:bg-gradient-to-b after:to-[rgba(0,0,0,0.8)] after:from-transparent after:absolute after:pointer-events-none">
-                    <img class="w-full h-full object-cover hover:scale-110 transition-all duration-[1200ms]"  src="https://ekonomikosesi.com/wp-content/uploads/2022/10/0sdf0sdf0sdf0sfd-440x271.png" alt="">
-                    <div class="text-left m-[1em] absolute z-10">
-                        <a href="" class="text-white text-[1.5em] font-bold no-underline">İşinizi Büyütmenize Yardımcı Olacak Dijital Pazarlama Araçları</a>
-                        <div>
-                            <a href="" class="uppercase text-flag-red font-normal text-large no-underline">İş Dünyası</a>
-                            <span class="font-normal text-large text-white before:content-['|'] before:mr-3 before:ml-2">4 ay önce</span> 
-                        </div>
-                        <div class="flex items-center border-t border-opacity-20 border-t-white pt-[0.8em] mt-[0.8em] ">
-                            <i class='bx bx-show text-white mr-[5px]'></i>
-                            <span class="text-[0.8em] font-normal text-white">7274</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="w-[282px] h-[439px] mx-[10px] relative flex flex-col justify-end items-center cursor-pointer overflow-hidden after:w-full after:h-full after:px-[10px] after:bg-gradient-to-b after:to-[rgba(0,0,0,0.8)] after:from-transparent after:absolute after:pointer-events-none">
-                    <img class="w-full h-full object-cover hover:scale-110 transition-all duration-[1200ms]"  src="https://ekonomikosesi.com/wp-content/uploads/2022/10/0sdf0sdf0sdf0sfd-440x271.png" alt="">
-                    <div class="text-left m-[1em] absolute z-10">
-                        <a href="" class="text-white text-[1.5em] font-bold no-underline">İşinizi Büyütmenize Yardımcı Olacak Dijital Pazarlama Araçları</a>
-                        <div>
-                            <a href="" class="uppercase text-flag-red font-normal text-large no-underline">İş Dünyası</a>
-                            <span class="font-normal text-large text-white before:content-['|'] before:mr-3 before:ml-2">4 ay önce</span> 
-                        </div>
-                        <div class="flex items-center border-t border-opacity-20 border-t-white pt-[0.8em] mt-[0.8em] ">
-                            <i class='bx bx-show text-white mr-[5px]'></i>
-                            <span class="text-[0.8em] font-normal text-white">7274</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="w-[282px] h-[439px] mx-[10px] relative flex flex-col justify-end items-center cursor-pointer overflow-hidden after:w-full after:h-full after:px-[10px] after:bg-gradient-to-b after:to-[rgba(0,0,0,0.8)] after:from-transparent after:absolute after:pointer-events-none">
-                    <img class="w-full h-full object-cover hover:scale-110 transition-all duration-[1200ms]"  src="https://ekonomikosesi.com/wp-content/uploads/2022/10/0sdf0sdf0sdf0sfd-440x271.png" alt="">
-                    <div class="text-left m-[1em] absolute z-10">
-                        <a href="" class="text-white text-[1.5em] font-bold no-underline">İşinizi Büyütmenize Yardımcı Olacak Dijital Pazarlama Araçları</a>
-                        <div>
-                            <a href="" class="uppercase text-flag-red font-normal text-large no-underline">İş Dünyası</a>
-                            <span class="font-normal text-large text-white before:content-['|'] before:mr-3 before:ml-2">4 ay önce</span> 
-                        </div>
-                        <div class="flex items-center border-t border-opacity-20 border-t-white pt-[0.8em] mt-[0.8em] ">
+                        <div class="flex items-center border-t border-opacity-20 border-t-white pt-[0.8em] mt-[0.8em]">
                             <i class='bx bx-show text-white mr-[5px]'></i>
                             <span class="text-[0.8em] font-normal text-white">7274</span>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="mt-[1em] -ml-[10px] mb-[20px] flex">
-                <div class="w-[282px] h-[439px] mx-[10px] relative flex flex-col justify-end items-center cursor-pointer overflow-hidden after:w-full after:h-full after:px-[10px] after:bg-gradient-to-b after:to-[rgba(0,0,0,0.8)] after:from-transparent after:absolute after:pointer-events-none">
-                    <img class="w-full h-full object-cover hover:scale-110 transition-all duration-[1200ms]"  src="https://ekonomikosesi.com/wp-content/uploads/2022/10/0sdf0sdf0sdf0sfd-440x271.png" alt="">
-                    <div class="text-left m-[1em] absolute z-10">
+            <div class="mt-[1em] -ml-[10px] phone:ml-0 mb-[20px] flex items-center justify-between relative w-full bigger-phone:flex-wrap">
+                <div class="mx-[10px] phone:mx-0 relative flex flex-col justify-end items-center w-[33%] bigger-phone:w-[45%] phone:w-[100%] h-[439px] cursor-pointer overflow-hidden after:w-full after:h-full after:px-[10px] after:bg-gradient-to-b after:to-[rgba(0,0,0,0.8)] after:from-transparent after:absolute after:pointer-events-none">
+                    <img class="w-full h-full  object-cover hover:scale-110 transition-all duration-[1200ms]"  src="https://ekonomikosesi.com/wp-content/uploads/2022/10/0sdf0sdf0sdf0sfd-440x271.png" alt="">
+                    <div class="text-left p-[1em] absolute z-10 flex flex-col justify-end w-full">
                         <a href="" class="text-white text-[1.5em] font-bold no-underline">İşinizi Büyütmenize Yardımcı Olacak Dijital Pazarlama Araçları</a>
                         <div>
                             <a href="" class="uppercase text-flag-red font-normal text-large no-underline">İş Dünyası</a>
                             <span class="font-normal text-large text-white before:content-['|'] before:mr-3 before:ml-2">4 ay önce</span> 
                         </div>
-                        <div class="flex items-center border-t border-opacity-20 border-t-white pt-[0.8em] mt-[0.8em] ">
+                        <div class="flex items-center border-t border-opacity-20 border-t-white pt-[0.8em] mt-[0.8em]">
                             <i class='bx bx-show text-white mr-[5px]'></i>
                             <span class="text-[0.8em] font-normal text-white">7274</span>
                         </div>
                     </div>
                 </div>
-                <div class="w-[282px] h-[439px] mx-[10px] relative flex flex-col justify-end items-center cursor-pointer overflow-hidden after:w-full after:h-full after:px-[10px] after:bg-gradient-to-b after:to-[rgba(0,0,0,0.8)] after:from-transparent after:absolute after:pointer-events-none">
-                    <img class="w-full h-full object-cover hover:scale-110 transition-all duration-[1200ms]"  src="https://ekonomikosesi.com/wp-content/uploads/2022/10/0sdf0sdf0sdf0sfd-440x271.png" alt="">
-                    <div class="text-left m-[1em] absolute z-10">
+                <div class="mx-[10px] phone:mx-0 relative flex flex-col justify-end items-center w-[33%] bigger-phone:w-[45%] phone:w-[100%] phone:mt-[20px] h-[439px] cursor-pointer overflow-hidden after:w-full after:h-full after:px-[10px] after:bg-gradient-to-b after:to-[rgba(0,0,0,0.8)] after:from-transparent after:absolute after:pointer-events-none">
+                    <img class="w-full h-full  object-cover hover:scale-110 transition-all duration-[1200ms]"  src="https://ekonomikosesi.com/wp-content/uploads/2022/10/0sdf0sdf0sdf0sfd-440x271.png" alt="">
+                    <div class="text-left p-[1em] absolute z-10 flex flex-col justify-end w-full">
                         <a href="" class="text-white text-[1.5em] font-bold no-underline">İşinizi Büyütmenize Yardımcı Olacak Dijital Pazarlama Araçları</a>
                         <div>
                             <a href="" class="uppercase text-flag-red font-normal text-large no-underline">İş Dünyası</a>
                             <span class="font-normal text-large text-white before:content-['|'] before:mr-3 before:ml-2">4 ay önce</span> 
                         </div>
-                        <div class="flex items-center border-t border-opacity-20 border-t-white pt-[0.8em] mt-[0.8em] ">
+                        <div class="flex items-center border-t border-opacity-20 border-t-white pt-[0.8em] mt-[0.8em]">
                             <i class='bx bx-show text-white mr-[5px]'></i>
                             <span class="text-[0.8em] font-normal text-white">7274</span>
                         </div>
                     </div>
                 </div>
-                <div class="w-[282px] h-[439px] mx-[10px] relative flex flex-col justify-end items-center cursor-pointer overflow-hidden after:w-full after:h-full after:px-[10px] after:bg-gradient-to-b after:to-[rgba(0,0,0,0.8)] after:from-transparent after:absolute after:pointer-events-none">
-                    <img class="w-full h-full object-cover hover:scale-110 transition-all duration-[1200ms]"  src="https://ekonomikosesi.com/wp-content/uploads/2022/10/0sdf0sdf0sdf0sfd-440x271.png" alt="">
-                    <div class="text-left m-[1em] absolute z-10">
+                <div class="mx-[10px] phone:mx-0 relative flex flex-col justify-end items-center w-[33%] bigger-phone:w-[100%] phone:w-[100%] bigger-phone:mt-[20px] h-[439px] cursor-pointer overflow-hidden after:w-full after:h-full after:px-[10px] after:bg-gradient-to-b after:to-[rgba(0,0,0,0.8)] after:from-transparent after:absolute after:pointer-events-none">
+                    <img class="w-full h-full  object-cover hover:scale-110 transition-all duration-[1200ms]"  src="https://ekonomikosesi.com/wp-content/uploads/2022/10/0sdf0sdf0sdf0sfd-440x271.png" alt="">
+                    <div class="text-left p-[1em] absolute z-10 flex flex-col justify-end w-full">
+                        <a href="" class="text-white text-[1.5em] font-bold no-underline">İşinizi Büyütmenize Yardımcı Olacak Dijital Pazarlama Araçları</a>
+                        <div>
+                            <a href="" class="uppercase text-flag-red font-normal text-large no-underline">İş Dünyası</a>
+                            <span class="font-normal text-large text-white before:content-['|'] before:mr-3 before:ml-2">4 ay önce</span> 
+                        </div>
+                        <div class="flex items-center border-t border-opacity-20 border-t-white pt-[0.8em] mt-[0.8em]">
+                            <i class='bx bx-show text-white mr-[5px]'></i>
+                            <span class="text-[0.8em] font-normal text-white">7274</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-[1em] -ml-[10px] phone:ml-0 mb-[20px] flex items-center justify-between relative w-full bigger-phone:flex-wrap">
+                <div class="mx-[10px] phone:mx-0 relative flex flex-col justify-end items-center w-[33%] bigger-phone:w-[45%] phone:w-[100%] h-[439px] cursor-pointer overflow-hidden after:w-full after:h-full after:px-[10px] after:bg-gradient-to-b after:to-[rgba(0,0,0,0.8)] after:from-transparent after:absolute after:pointer-events-none">
+                    <img class="w-full h-full  object-cover hover:scale-110 transition-all duration-[1200ms]"  src="https://ekonomikosesi.com/wp-content/uploads/2022/10/0sdf0sdf0sdf0sfd-440x271.png" alt="">
+                    <div class="text-left p-[1em] absolute z-10 flex flex-col justify-end w-full">
+                        <a href="" class="text-white text-[1.5em] font-bold no-underline">İşinizi Büyütmenize Yardımcı Olacak Dijital Pazarlama Araçları</a>
+                        <div>
+                            <a href="" class="uppercase text-flag-red font-normal text-large no-underline">İş Dünyası</a>
+                            <span class="font-normal text-large text-white before:content-['|'] before:mr-3 before:ml-2">4 ay önce</span> 
+                        </div>
+                        <div class="flex items-center border-t border-opacity-20 border-t-white pt-[0.8em] mt-[0.8em]">
+                            <i class='bx bx-show text-white mr-[5px]'></i>
+                            <span class="text-[0.8em] font-normal text-white">7274</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="mx-[10px] phone:mx-0 relative flex flex-col justify-end items-center w-[33%] bigger-phone:w-[45%] phone:w-[100%] phone:mt-[20px] h-[439px] cursor-pointer overflow-hidden after:w-full after:h-full after:px-[10px] after:bg-gradient-to-b after:to-[rgba(0,0,0,0.8)] after:from-transparent after:absolute after:pointer-events-none">
+                    <img class="w-full h-full  object-cover hover:scale-110 transition-all duration-[1200ms]"  src="https://ekonomikosesi.com/wp-content/uploads/2022/10/0sdf0sdf0sdf0sfd-440x271.png" alt="">
+                    <div class="text-left p-[1em] absolute z-10 flex flex-col justify-end w-full">
+                        <a href="" class="text-white text-[1.5em] font-bold no-underline">İşinizi Büyütmenize Yardımcı Olacak Dijital Pazarlama Araçları</a>
+                        <div>
+                            <a href="" class="uppercase text-flag-red font-normal text-large no-underline">İş Dünyası</a>
+                            <span class="font-normal text-large text-white before:content-['|'] before:mr-3 before:ml-2">4 ay önce</span> 
+                        </div>
+                        <div class="flex items-center border-t border-opacity-20 border-t-white pt-[0.8em] mt-[0.8em]">
+                            <i class='bx bx-show text-white mr-[5px]'></i>
+                            <span class="text-[0.8em] font-normal text-white">7274</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="mx-[10px] phone:mx-0 relative flex flex-col justify-end items-center w-[33%] bigger-phone:w-[100%] phone:w-[100%] bigger-phone:mt-[20px] h-[439px] cursor-pointer overflow-hidden after:w-full after:h-full after:px-[10px] after:bg-gradient-to-b after:to-[rgba(0,0,0,0.8)] after:from-transparent after:absolute after:pointer-events-none">
+                    <img class="w-full h-full  object-cover hover:scale-110 transition-all duration-[1200ms]"  src="https://ekonomikosesi.com/wp-content/uploads/2022/10/0sdf0sdf0sdf0sfd-440x271.png" alt="">
+                    <div class="text-left p-[1em] absolute z-10 flex flex-col justify-end w-full">
                         <a href="" class="text-white text-[1.5em] font-bold no-underline">İşinizi Büyütmenize Yardımcı Olacak Dijital Pazarlama Araçları</a>
                         <div>
                             <a href="" class="uppercase text-flag-red font-normal text-large no-underline">İş Dünyası</a>
@@ -445,8 +445,483 @@
                 </div>
             </div>
         </div>
+        <div class="w-[25%] min-w-[200px] phone:w-[100%] px-[25px] phone:px-0 relative phone:mt-[20px]">
+            <h2 class="text-text-gray font-semibold text-[1.4em] mb-[1em]">Sıcak Haber</h2>
+            <div class="flex items-center justify-between w-full h-auto min-h-[96px] mb-[15px] relative">
+                    <div class="w-[25%] absolute h-full phone:h-[145px] bg-bg-gray flex items-start">
+                        <img class="w-full object-cover hover:scale-110 transition-all duration-[1200ms] phone:h-full" src="https://ekonomikosesi.com/wp-content/uploads/2022/10/sfd0sfd0sfd-180x290.png" alt="">
+                    </div>
+                    <div class="w-[75%] ml-[25%] pl-[10px] min-h-[96px] flex flex-col justify-between h-auto phone:h-[145px]">
+                        <div class="flex flex-col justify-between">
+                            <span class="text-flag-red text-[0.7em] mb-[0.25rem] uppercase">SOSYAL MEDYA</span>
+                            <p class="text-text-gray font-bold text-[1em]">Tiktok'ta Pazarlama Nasıl Yapılır?</p>
+                        </div>
+                        <span class="font-light text-[0.8em] text-text-gray">4 ay önce</span>
+                    </div>
+            </div>
+            <div class="flex items-center justify-between w-full h-auto min-h-[96px] mb-[15px] relative">
+                <div class="w-[25%] absolute h-full phone:h-[145px] bg-bg-gray flex items-start">
+                    <img class="w-full object-cover hover:scale-110 transition-all duration-[1200ms] phone:h-full" src="https://ekonomikosesi.com/wp-content/uploads/2022/10/sfd0sfd0sfd-180x290.png" alt="">
+                </div>
+                <div class="w-[75%] ml-[25%] pl-[10px] min-h-[96px] flex flex-col justify-between h-auto phone:h-[145px]">
+                    <div class="flex flex-col justify-between">
+                        <span class="text-flag-red text-[0.7em] mb-[0.25rem] uppercase">SOSYAL MEDYA</span>
+                        <p class="text-text-gray font-bold text-[1em]">Tiktok'ta Pazarlama Nasıl Yapılır?</p>
+                    </div>
+                    <span class="font-light text-[0.8em] text-text-gray">4 ay önce</span>
+                </div>
+            </div>
+            <div class="flex items-center justify-between w-full h-auto min-h-[96px] mb-[15px] relative">
+                <div class="w-[25%] absolute h-full phone:h-[145px] bg-bg-gray flex items-start">
+                    <img class="w-full object-cover hover:scale-110 transition-all duration-[1200ms] phone:h-full" src="https://ekonomikosesi.com/wp-content/uploads/2022/10/sfd0sfd0sfd-180x290.png" alt="">
+                </div>
+                <div class="w-[75%] ml-[25%] pl-[10px] min-h-[96px] flex flex-col justify-between h-auto phone:h-[145px]">
+                    <div class="flex flex-col justify-between">
+                        <span class="text-flag-red text-[0.7em] mb-[0.25rem] uppercase">SOSYAL MEDYA</span>
+                        <p class="text-text-gray font-bold text-[1em]">Tiktok'ta Pazarlama Nasıl Yapılır?</p>
+                    </div>
+                    <span class="font-light text-[0.8em] text-text-gray">4 ay önce</span>
+                </div>
+            </div>
+            <div class="flex items-center justify-between w-full h-auto min-h-[96px] mb-[15px] relative">
+                <div class="w-[25%] absolute h-full phone:h-[145px] bg-bg-gray flex items-start">
+                    <img class="w-full object-cover hover:scale-110 transition-all duration-[1200ms] phone:h-full" src="https://ekonomikosesi.com/wp-content/uploads/2022/10/sfd0sfd0sfd-180x290.png" alt="">
+                </div>
+                <div class="w-[75%] ml-[25%] pl-[10px] min-h-[96px] flex flex-col justify-between h-auto phone:h-[145px]">
+                    <div class="flex flex-col justify-between">
+                        <span class="text-flag-red text-[0.7em] mb-[0.25rem] uppercase">SOSYAL MEDYA</span>
+                        <p class="text-text-gray font-bold text-[1em]">Tiktok'ta Pazarlama Nasıl Yapılır?</p>
+                    </div>
+                    <span class="font-light text-[0.8em] text-text-gray">4 ay önce</span>
+                </div>
+            </div>
+            <div class="flex items-center justify-between w-full h-auto min-h-[96px] mb-[15px] relative">
+                <div class="w-[25%] absolute h-full phone:h-[145px] bg-bg-gray flex items-start">
+                    <img class="w-full object-cover hover:scale-110 transition-all duration-[1200ms] phone:h-full" src="https://ekonomikosesi.com/wp-content/uploads/2022/10/sfd0sfd0sfd-180x290.png" alt="">
+                </div>
+                <div class="w-[75%] ml-[25%] pl-[10px] min-h-[96px] flex flex-col justify-between h-auto phone:h-[145px]">
+                    <div class="flex flex-col justify-between">
+                        <span class="text-flag-red text-[0.7em] mb-[0.25rem] uppercase">SOSYAL MEDYA</span>
+                        <p class="text-text-gray font-bold text-[1em]">Tiktok'ta Pazarlama Nasıl Yapılır?</p>
+                    </div>
+                    <span class="font-light text-[0.8em] text-text-gray">4 ay önce</span>
+                </div>
+            </div>
+            <div class="flex items-center justify-between w-full h-auto min-h-[96px] mb-[15px] relative">
+                <div class="w-[25%] absolute h-full phone:h-[145px] bg-bg-gray flex items-start">
+                    <img class="w-full object-cover hover:scale-110 transition-all duration-[1200ms] phone:h-full" src="https://ekonomikosesi.com/wp-content/uploads/2022/10/sfd0sfd0sfd-180x290.png" alt="">
+                </div>
+                <div class="w-[75%] ml-[25%] pl-[10px] min-h-[96px] flex flex-col justify-between h-auto phone:h-[145px]">
+                    <div class="flex flex-col justify-between">
+                        <span class="text-flag-red text-[0.7em] mb-[0.25rem] uppercase">SOSYAL MEDYA</span>
+                        <p class="text-text-gray font-bold text-[1em]">Tiktok'ta Pazarlama Nasıl Yapılır?</p>
+                    </div>
+                    <span class="font-light text-[0.8em] text-text-gray">4 ay önce</span>
+                </div>
+            </div>
+            <div class="flex items-center justify-between w-full h-auto min-h-[96px] mb-[15px] relative">
+                <div class="w-[25%] absolute h-full phone:h-[145px] bg-bg-gray flex items-start">
+                    <img class="w-full object-cover hover:scale-110 transition-all duration-[1200ms] phone:h-full" src="https://ekonomikosesi.com/wp-content/uploads/2022/10/sfd0sfd0sfd-180x290.png" alt="">
+                </div>
+                <div class="w-[75%] ml-[25%] pl-[10px] min-h-[96px] flex flex-col justify-between h-auto phone:h-[145px]">
+                    <div class="flex flex-col justify-between">
+                        <span class="text-flag-red text-[0.7em] mb-[0.25rem] uppercase">SOSYAL MEDYA</span>
+                        <p class="text-text-gray font-bold text-[1em]">Tiktok'ta Pazarlama Nasıl Yapılır?</p>
+                    </div>
+                    <span class="font-light text-[0.8em] text-text-gray">4 ay önce</span>
+                </div>
+            </div>
+            <div class="flex items-center justify-between w-full h-auto min-h-[96px] mb-[15px] relative">
+                <div class="w-[25%] absolute h-full phone:h-[145px] bg-bg-gray flex items-start">
+                    <img class="w-full object-cover hover:scale-110 transition-all duration-[1200ms] phone:h-full" src="https://ekonomikosesi.com/wp-content/uploads/2022/10/sfd0sfd0sfd-180x290.png" alt="">
+                </div>
+                <div class="w-[75%] ml-[25%] pl-[10px] min-h-[96px] flex flex-col justify-between h-auto phone:h-[145px]">
+                    <div class="flex flex-col justify-between">
+                        <span class="text-flag-red text-[0.7em] mb-[0.25rem] uppercase">SOSYAL MEDYA</span>
+                        <p class="text-text-gray font-bold text-[1em]">Tiktok'ta Pazarlama Nasıl Yapılır?</p>
+                    </div>
+                    <span class="font-light text-[0.8em] text-text-gray">4 ay önce</span>
+                </div>
+            </div>
+            <div class="flex items-center justify-between w-full h-auto min-h-[96px] mb-[15px] relative">
+                <div class="w-[25%] absolute h-full phone:h-[145px] bg-bg-gray flex items-start">
+                    <img class="w-full object-cover hover:scale-110 transition-all duration-[1200ms] phone:h-full" src="https://ekonomikosesi.com/wp-content/uploads/2022/10/sfd0sfd0sfd-180x290.png" alt="">
+                </div>
+                <div class="w-[75%] ml-[25%] pl-[10px] min-h-[96px] flex flex-col justify-between h-auto phone:h-[145px]">
+                    <div class="flex flex-col justify-between">
+                        <span class="text-flag-red text-[0.7em] mb-[0.25rem] uppercase">SOSYAL MEDYA</span>
+                        <p class="text-text-gray font-bold text-[1em]">Tiktok'ta Pazarlama Nasıl Yapılır?</p>
+                    </div>
+                    <span class="font-light text-[0.8em] text-text-gray">4 ay önce</span>
+                </div>
+            </div>
+            <div class="flex items-center justify-between w-full h-auto min-h-[96px] mb-[15px] relative">
+                <div class="w-[25%] absolute h-full phone:h-[145px] bg-bg-gray flex items-start">
+                    <img class="w-full object-cover hover:scale-110 transition-all duration-[1200ms] phone:h-full" src="https://ekonomikosesi.com/wp-content/uploads/2022/10/sfd0sfd0sfd-180x290.png" alt="">
+                </div>
+                <div class="w-[75%] ml-[25%] pl-[10px] min-h-[96px] flex flex-col justify-between h-auto phone:h-[145px]">
+                    <div class="flex flex-col justify-between">
+                        <span class="text-flag-red text-[0.7em] mb-[0.25rem] uppercase">SOSYAL MEDYA</span>
+                        <p class="text-text-gray font-bold text-[1em]">Tiktok'ta Pazarlama Nasıl Yapılır?</p>
+                    </div>
+                    <span class="font-light text-[0.8em] text-text-gray">4 ay önce</span>
+                </div>
+            </div>
+            <div class="flex items-center justify-between w-full h-auto min-h-[96px] mb-[15px] relative">
+                <div class="w-[25%] absolute h-full phone:h-[145px] bg-bg-gray flex items-start">
+                    <img class="w-full object-cover hover:scale-110 transition-all duration-[1200ms] phone:h-full" src="https://ekonomikosesi.com/wp-content/uploads/2022/10/sfd0sfd0sfd-180x290.png" alt="">
+                </div>
+                <div class="w-[75%] ml-[25%] pl-[10px] min-h-[96px] flex flex-col justify-between h-auto phone:h-[145px]">
+                    <div class="flex flex-col justify-between">
+                        <span class="text-flag-red text-[0.7em] mb-[0.25rem] uppercase">SOSYAL MEDYA</span>
+                        <p class="text-text-gray font-bold text-[1em]">Tiktok'ta Pazarlama Nasıl Yapılır?</p>
+                    </div>
+                    <span class="font-light text-[0.8em] text-text-gray">4 ay önce</span>
+                </div>
+            </div>
+
+            <div class="w-full h-auto mt-[4em]">
+                <img class="mt-[18px]" src="https://ekonomikosesi.com/wp-content/uploads/2023/01/blackrock_logo.png" alt="">
+            </div>
+        </div>
     </div>
-    
+    <div class="bg-secondary-gray">
+        <div class="mx-auto w-[1200px] flex items-start phone:flex-col tablet:w-full pt-[45px] pb-[30px] relative  tablet:px-[20px]">
+            <div class="w-[75%] phone:w-[100%]">
+                <div class="flex">
+                    <h2 class="text-flag-red text-[1.5em] leading-[1.5rem] font-semibold">Dünya</h2>
+                </div>
+                <div class="mt-[50px] -ml-[10px] phone:ml-0 mb-[20px] flex items-center justify-between relative w-full bigger-phone:flex-wrap">
+                    <div class="mx-[10px] mt-[25px] phone:mx-0 relative flex flex-col justify-end items-center w-[25%] bigger-phone:w-[45%] phone:w-[100%] bigger-phone:mt-[20px] h-[439px] cursor-pointer overflow-hidden after:w-full after:h-full after:px-[10px] after:bg-gradient-to-b after:to-[rgba(0,0,0,0.8)] after:from-transparent after:absolute after:pointer-events-none">
+                        <img class="w-full h-full  object-cover hover:scale-110 transition-all duration-[1200ms]" src="https://ekonomikosesi.com/wp-content/uploads/2022/10/000AAAAAdfsdsfsdf-360x427.png" alt="">
+                        <div class="text-left p-[1em] flex flex-col justify-end w-full absolute z-10">
+                            <a href="" class="text-white text-[1.1em] font-bold no-underline">Dünyanın En Berrak Suya Sahip 10 Sahili</a>
+                            <div>
+                                <a href="" class="uppercase text-flag-red font-normal text-large no-underline">Seyahat</a>
+                                <span class="font-normal text-large text-white before:content-['|'] before:mr-3 before:ml-2">4 ay önce</span> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mx-[10px] mt-[25px] phone:mx-0 relative flex flex-col justify-end items-center w-[25%] bigger-phone:w-[45%] phone:w-[100%] bigger-phone:mt-[20px] h-[439px] cursor-pointer overflow-hidden after:w-full after:h-full after:px-[10px] after:bg-gradient-to-b after:to-[rgba(0,0,0,0.8)] after:from-transparent after:absolute after:pointer-events-none">
+                        <img class="w-full h-full  object-cover hover:scale-110 transition-all duration-[1200ms]" src="https://ekonomikosesi.com/wp-content/uploads/2022/10/000AAAAAdfsdsfsdf-360x427.png" alt="">
+                        <div class="text-left p-[1em] flex flex-col justify-end w-full absolute z-10">
+                            <a href="" class="text-white text-[1.1em] font-bold no-underline">Dünyanın En Berrak Suya Sahip 10 Sahili</a>
+                            <div>
+                                <a href="" class="uppercase text-flag-red font-normal text-large no-underline">Seyahat</a>
+                                <span class="font-normal text-large text-white before:content-['|'] before:mr-3 before:ml-2">4 ay önce</span> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mx-[10px] mt-[25px] phone:mx-0 relative flex flex-col justify-end items-center w-[25%] bigger-phone:w-[45%] phone:w-[100%] bigger-phone:mt-[20px] h-[439px] cursor-pointer overflow-hidden after:w-full after:h-full after:px-[10px] after:bg-gradient-to-b after:to-[rgba(0,0,0,0.8)] after:from-transparent after:absolute after:pointer-events-none">
+                        <img class="w-full h-full  object-cover hover:scale-110 transition-all duration-[1200ms]" src="https://ekonomikosesi.com/wp-content/uploads/2022/10/000AAAAAdfsdsfsdf-360x427.png" alt="">
+                        <div class="text-left p-[1em] flex flex-col justify-end w-full absolute z-10">
+                            <a href="" class="text-white text-[1.1em] font-bold no-underline">Dünyanın En Berrak Suya Sahip 10 Sahili</a>
+                            <div>
+                                <a href="" class="uppercase text-flag-red font-normal text-large no-underline">Seyahat</a>
+                                <span class="font-normal text-large text-white before:content-['|'] before:mr-3 before:ml-2">4 ay önce</span> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mx-[10px] mt-[25px] phone:mx-0 relative flex flex-col justify-end items-center w-[25%] bigger-phone:w-[45%] phone:w-[100%] bigger-phone:mt-[20px] h-[439px] cursor-pointer overflow-hidden after:w-full after:h-full after:px-[10px] after:bg-gradient-to-b after:to-[rgba(0,0,0,0.8)] after:from-transparent after:absolute after:pointer-events-none">
+                        <img class="w-full h-full  object-cover hover:scale-110 transition-all duration-[1200ms]" src="https://ekonomikosesi.com/wp-content/uploads/2022/10/000AAAAAdfsdsfsdf-360x427.png" alt="">
+                        <div class="text-left p-[1em] flex flex-col justify-end w-full absolute z-10">
+                            <a href="" class="text-white text-[1.1em] font-bold no-underline">Dünyanın En Berrak Suya Sahip 10 Sahili</a>
+                            <div>
+                                <a href="" class="uppercase text-flag-red font-normal text-large no-underline">Seyahat</a>
+                                <span class="font-normal text-large text-white before:content-['|'] before:mr-3 before:ml-2">4 ay önce</span> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="w-[25%] mt-[100px] min-w-[200px] phone:w-[100%] px-[25px] phone:px-0 relative phone:mt-[20px]">
+                <div class="flex items-center justify-between w-full h-auto min-h-[96px] mb-[15px] relative">
+                    <div class="w-[25%] absolute h-full phone:h-[145px] bg-bg-gray flex items-start">
+                        <img class="w-full object-cover hover:scale-110 transition-all duration-[1200ms] phone:h-full" src="https://ekonomikosesi.com/wp-content/uploads/2022/10/sfd0sfd0sfd-180x290.png" alt="">
+                    </div>
+                    <div class="w-[75%] ml-[25%] pl-[10px] min-h-[96px] flex flex-col justify-between h-auto phone:h-[145px]">
+                        <div class="flex flex-col justify-between">
+                            <span class="text-flag-red text-[0.7em] mb-[0.25rem] uppercase">Seyahat</span>
+                            <p class="text-text-gray font-bold text-[0.9em]">Dünyanın en güzel köyleri açıklandı! Listede Türkiye’den tek bir köy var</p>
+                        </div>
+                        <span class="font-light text-[0.8em] text-text-gray">4 ay önce</span>
+                    </div>   
+                </div>
+                <div class="flex items-center justify-between w-full h-auto min-h-[96px] mb-[15px] relative">
+                    <div class="w-[25%] absolute h-full phone:h-[145px] bg-bg-gray flex items-start">
+                        <img class="w-full object-cover hover:scale-110 transition-all duration-[1200ms] phone:h-full" src="https://ekonomikosesi.com/wp-content/uploads/2022/10/sfd0sfd0sfd-180x290.png" alt="">
+                    </div>
+                    <div class="w-[75%] ml-[25%] pl-[10px] min-h-[96px] flex flex-col justify-between h-auto phone:h-[145px]">
+                        <div class="flex flex-col justify-between">
+                            <span class="text-flag-red text-[0.7em] mb-[0.25rem] uppercase">Seyahat</span>
+                            <p class="text-text-gray font-bold text-[0.9em]">Dünyanın en güzel köyleri açıklandı! Listede Türkiye’den tek bir köy var</p>
+                        </div>
+                        <span class="font-light text-[0.8em] text-text-gray">4 ay önce</span>
+                    </div>   
+                </div>
+                <div class="flex items-center justify-between w-full h-auto min-h-[96px] mb-[15px] relative">
+                    <div class="w-[25%] absolute h-full phone:h-[145px] bg-bg-gray flex items-start">
+                        <img class="w-full object-cover hover:scale-110 transition-all duration-[1200ms] phone:h-full" src="https://ekonomikosesi.com/wp-content/uploads/2022/10/sfd0sfd0sfd-180x290.png" alt="">
+                    </div>
+                    <div class="w-[75%] ml-[25%] pl-[10px] min-h-[96px] flex flex-col justify-between h-auto phone:h-[145px]">
+                        <div class="flex flex-col justify-between">
+                            <span class="text-flag-red text-[0.7em] mb-[0.25rem] uppercase">Seyahat</span>
+                            <p class="text-text-gray font-bold text-[0.9em]">Dünyanın en güzel köyleri açıklandı! Listede Türkiye’den tek bir köy var</p>
+                        </div>
+                        <span class="font-light text-[0.8em] text-text-gray">4 ay önce</span>
+                    </div>   
+                </div>
+                <div class="border-t border-t-sub-menu-border w-full">
+                    <p class="text-text-gray text-[1em] mt-[1em]">Güncel <a class="text-flag-red" href="">Dünya Haberleri</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="mx-auto w-[1200px] flex items-start phone:flex-col tablet:w-full pt-[45px] pb-[30px] relative  tablet:px-[20px]">
+            <div class="w-[75%] phone:w-[100%]">
+                <div class="flex">
+                    <h2 class="text-flag-red text-[1.5em] leading-[1.5rem] font-semibold">Dünya</h2>
+                </div>
+                <div class="mt-[50px] -ml-[10px] phone:ml-0 mb-[20px] flex items-center justify-between relative w-full bigger-phone:flex-wrap">
+                    <div class="mx-[10px] mt-[25px] phone:mx-0 relative flex flex-col justify-end items-center w-[25%] bigger-phone:w-[45%] phone:w-[100%] bigger-phone:mt-[20px] h-[439px] cursor-pointer overflow-hidden after:w-full after:h-full after:px-[10px] after:bg-gradient-to-b after:to-[rgba(0,0,0,0.8)] after:from-transparent after:absolute after:pointer-events-none">
+                        <img class="w-full h-full  object-cover hover:scale-110 transition-all duration-[1200ms]" src="https://ekonomikosesi.com/wp-content/uploads/2022/10/000AAAAAdfsdsfsdf-360x427.png" alt="">
+                        <div class="text-left p-[1em] flex flex-col justify-end w-full absolute z-10">
+                            <a href="" class="text-white text-[1.1em] font-bold no-underline">Dünyanın En Berrak Suya Sahip 10 Sahili</a>
+                            <div>
+                                <a href="" class="uppercase text-flag-red font-normal text-large no-underline">Seyahat</a>
+                                <span class="font-normal text-large text-white before:content-['|'] before:mr-3 before:ml-2">4 ay önce</span> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mx-[10px] mt-[25px] phone:mx-0 relative flex flex-col justify-end items-center w-[25%] bigger-phone:w-[45%] phone:w-[100%] bigger-phone:mt-[20px] h-[439px] cursor-pointer overflow-hidden after:w-full after:h-full after:px-[10px] after:bg-gradient-to-b after:to-[rgba(0,0,0,0.8)] after:from-transparent after:absolute after:pointer-events-none">
+                        <img class="w-full h-full  object-cover hover:scale-110 transition-all duration-[1200ms]" src="https://ekonomikosesi.com/wp-content/uploads/2022/10/000AAAAAdfsdsfsdf-360x427.png" alt="">
+                        <div class="text-left p-[1em] flex flex-col justify-end w-full absolute z-10">
+                            <a href="" class="text-white text-[1.1em] font-bold no-underline">Dünyanın En Berrak Suya Sahip 10 Sahili</a>
+                            <div>
+                                <a href="" class="uppercase text-flag-red font-normal text-large no-underline">Seyahat</a>
+                                <span class="font-normal text-large text-white before:content-['|'] before:mr-3 before:ml-2">4 ay önce</span> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mx-[10px] mt-[25px] phone:mx-0 relative flex flex-col justify-end items-center w-[25%] bigger-phone:w-[45%] phone:w-[100%] bigger-phone:mt-[20px] h-[439px] cursor-pointer overflow-hidden after:w-full after:h-full after:px-[10px] after:bg-gradient-to-b after:to-[rgba(0,0,0,0.8)] after:from-transparent after:absolute after:pointer-events-none">
+                        <img class="w-full h-full  object-cover hover:scale-110 transition-all duration-[1200ms]" src="https://ekonomikosesi.com/wp-content/uploads/2022/10/000AAAAAdfsdsfsdf-360x427.png" alt="">
+                        <div class="text-left p-[1em] flex flex-col justify-end w-full absolute z-10">
+                            <a href="" class="text-white text-[1.1em] font-bold no-underline">Dünyanın En Berrak Suya Sahip 10 Sahili</a>
+                            <div>
+                                <a href="" class="uppercase text-flag-red font-normal text-large no-underline">Seyahat</a>
+                                <span class="font-normal text-large text-white before:content-['|'] before:mr-3 before:ml-2">4 ay önce</span> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mx-[10px] mt-[25px] phone:mx-0 relative flex flex-col justify-end items-center w-[25%] bigger-phone:w-[45%] phone:w-[100%] bigger-phone:mt-[20px] h-[439px] cursor-pointer overflow-hidden after:w-full after:h-full after:px-[10px] after:bg-gradient-to-b after:to-[rgba(0,0,0,0.8)] after:from-transparent after:absolute after:pointer-events-none">
+                        <img class="w-full h-full  object-cover hover:scale-110 transition-all duration-[1200ms]" src="https://ekonomikosesi.com/wp-content/uploads/2022/10/000AAAAAdfsdsfsdf-360x427.png" alt="">
+                        <div class="text-left p-[1em] flex flex-col justify-end w-full absolute z-10">
+                            <a href="" class="text-white text-[1.1em] font-bold no-underline">Dünyanın En Berrak Suya Sahip 10 Sahili</a>
+                            <div>
+                                <a href="" class="uppercase text-flag-red font-normal text-large no-underline">Seyahat</a>
+                                <span class="font-normal text-large text-white before:content-['|'] before:mr-3 before:ml-2">4 ay önce</span> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="w-[25%] mt-[100px] min-w-[200px] phone:w-[100%] px-[25px] phone:px-0 relative phone:mt-[20px]">
+                <div class="flex items-center justify-between w-full h-auto min-h-[96px] mb-[15px] relative">
+                    <div class="w-[25%] absolute h-full phone:h-[145px] bg-bg-gray flex items-start">
+                        <img class="w-full object-cover hover:scale-110 transition-all duration-[1200ms] phone:h-full" src="https://ekonomikosesi.com/wp-content/uploads/2022/10/sfd0sfd0sfd-180x290.png" alt="">
+                    </div>
+                    <div class="w-[75%] ml-[25%] pl-[10px] min-h-[96px] flex flex-col justify-between h-auto phone:h-[145px]">
+                        <div class="flex flex-col justify-between">
+                            <span class="text-flag-red text-[0.7em] mb-[0.25rem] uppercase">Seyahat</span>
+                            <p class="text-text-gray font-bold text-[0.9em]">Dünyanın en güzel köyleri açıklandı! Listede Türkiye’den tek bir köy var</p>
+                        </div>
+                        <span class="font-light text-[0.8em] text-text-gray">4 ay önce</span>
+                    </div>   
+                </div>
+                <div class="flex items-center justify-between w-full h-auto min-h-[96px] mb-[15px] relative">
+                    <div class="w-[25%] absolute h-full phone:h-[145px] bg-bg-gray flex items-start">
+                        <img class="w-full object-cover hover:scale-110 transition-all duration-[1200ms] phone:h-full" src="https://ekonomikosesi.com/wp-content/uploads/2022/10/sfd0sfd0sfd-180x290.png" alt="">
+                    </div>
+                    <div class="w-[75%] ml-[25%] pl-[10px] min-h-[96px] flex flex-col justify-between h-auto phone:h-[145px]">
+                        <div class="flex flex-col justify-between">
+                            <span class="text-flag-red text-[0.7em] mb-[0.25rem] uppercase">Seyahat</span>
+                            <p class="text-text-gray font-bold text-[0.9em]">Dünyanın en güzel köyleri açıklandı! Listede Türkiye’den tek bir köy var</p>
+                        </div>
+                        <span class="font-light text-[0.8em] text-text-gray">4 ay önce</span>
+                    </div>   
+                </div>
+                <div class="flex items-center justify-between w-full h-auto min-h-[96px] mb-[15px] relative">
+                    <div class="w-[25%] absolute h-full phone:h-[145px] bg-bg-gray flex items-start">
+                        <img class="w-full object-cover hover:scale-110 transition-all duration-[1200ms] phone:h-full" src="https://ekonomikosesi.com/wp-content/uploads/2022/10/sfd0sfd0sfd-180x290.png" alt="">
+                    </div>
+                    <div class="w-[75%] ml-[25%] pl-[10px] min-h-[96px] flex flex-col justify-between h-auto phone:h-[145px]">
+                        <div class="flex flex-col justify-between">
+                            <span class="text-flag-red text-[0.7em] mb-[0.25rem] uppercase">Seyahat</span>
+                            <p class="text-text-gray font-bold text-[0.9em]">Dünyanın en güzel köyleri açıklandı! Listede Türkiye’den tek bir köy var</p>
+                        </div>
+                        <span class="font-light text-[0.8em] text-text-gray">4 ay önce</span>
+                    </div>   
+                </div>
+                <div class="border-t border-t-sub-menu-border w-full">
+                    <p class="text-text-gray text-[1em] mt-[1em]">Güncel <a class="text-flag-red" href="">Dünya Haberleri</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+        <!-- Swiper -->
+        <div class="swiper relative w-full h-[597px] tablet:h-[456px]">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="sliderBg w-full h-full absolute top-0 left-0 bg-[url('https://ekonomikosesi.com/wp-content/uploads/2022/10/sfd0sfd0sfd.png')] bg-no-repeat bg-cover"></div>
+                    <div class="sliderBgBlack absolute top-0 w-full h-full"></div>
+                    <div class="tablet:w-[90%] w-[1200px] m-auto h-full relative flex flex-col justify-center items-start text-left">
+                        <p class="bg-flag-red text-white text-[14px] px-[0.45em] py-[0.5em] font-medium leading-[1.8] left-0 mb-3 uppercase">SOSYAL MEDYA</p>
+                        <h2 class="text-white text-big font-bold max-w-[668px] leading-[1.1] mb-3 tablet:text-[45px] phone:text-[30px]">Tiktok'ta Pazarlama Nasıl Yapılır?</h2>
+                        <div>
+                            <span class="text-flag-red text-[16px] font-semibold">admin</span>
+                            <span class="font-light text-[1.1rem] opacity-50 text-white before:content-['|'] before:mr-3 before:ml-2">4 ay önce</span>
+                        </div>
+                        <a href="" class="text-white rounded-full border-[2px] border-white px-[40px] py-[14px] text-[13px] leading-[13px] font-bold mt-[45px] cursor-pointer">Devamını Oku</a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="sliderBg w-full h-full absolute top-0 left-0 bg-[url('https://ekonomikosesi.com/wp-content/uploads/2022/10/0dsf0sdfsfd-1.png')] bg-no-repeat bg-cover"></div>
+                    <div class="sliderBgBlack absolute top-0 w-full h-full"></div>
+                    <div class="tablet:w-[90%] w-[1200px] m-auto h-full relative flex flex-col justify-center items-start text-left">
+                        <p class="bg-flag-red text-white text-[14px] px-[0.45em] py-[0.5em] font-medium leading-[1.8] left-0 mb-3 uppercase">GENEL</p>
+                        <h2 class="text-white text-big font-bold max-w-[668px] leading-[1.1] mb-3 tablet:text-[45px] phone:text-[30px]">E-ticaret Hukuku Nedir? Dikkat Edilmesi Gerekenler Nelerdir?</h2>
+                        <div>
+                            <span class="text-flag-red text-[16px] font-semibold">admin</span>
+                            <span class="font-light text-[1.1rem] opacity-50 text-white before:content-['|'] before:mr-3 before:ml-2">4 ay önce</span>
+                        </div>
+                        <a href="" class="text-white rounded-full border-[2px] border-white px-[40px] py-[14px] text-[13px] leading-[13px] font-bold mt-[45px] cursor-pointer">Devamını Oku</a>
+                </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="sliderBg w-full h-full absolute top-0 left-0 bg-[url('https://ekonomikosesi.com/wp-content/uploads/2022/10/0sdf0sdf0sdf0sfd.png')] bg-no-repeat bg-cover"></div>
+                    <div class="sliderBgBlack absolute top-0 w-full h-full"></div>
+                    <div class="tablet:w-[90%] w-[1200px] m-auto h-full relative flex flex-col justify-center items-start text-left">
+                        <p class="bg-flag-red text-white text-[14px] px-[0.45em] py-[0.5em] font-medium leading-[1.8] left-0 mb-3 uppercase">İŞ DÜNYASI</p>
+                        <h2 class="text-white text-big font-bold max-w-[668px] leading-[1.1] mb-3 tablet:text-[45px] phone:text-[30px]">İşinizi Büyütmenize Yardımcı Olacak Dijital Pazarlama Araçları</h2>
+                        <div>
+                            <span class="text-flag-red text-[16px] font-semibold">admin</span>
+                            <span class="font-light text-[1.1rem] opacity-50 text-white before:content-['|'] before:mr-3 before:ml-2">4 ay önce</span>
+                        </div>
+                        <a href="" class="text-white rounded-full border-[2px] border-white px-[40px] py-[14px] text-[13px] leading-[13px] font-bold mt-[45px] cursor-pointer">Devamını Oku</a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="sliderBg w-full h-full absolute top-0 left-0 bg-[url('https://ekonomikosesi.com/wp-content/uploads/2022/10/0sdf0sfd0sdf.png')] bg-no-repeat bg-cover"></div>
+                    <div class="sliderBgBlack absolute top-0 w-full h-full"></div>
+                    <div class="tablet:w-[90%] w-[1200px] m-auto h-full relative flex flex-col justify-center items-start text-left">
+                        <p class="bg-flag-red text-white text-[14px] px-[0.45em] py-[0.5em] font-medium leading-[1.8] left-0 mb-3 uppercase">GENEL</p>
+                        <h2 class="text-white text-big font-bold max-w-[668px] leading-[1.1] mb-3 tablet:text-[45px] phone:text-[30px]">Youtube Algoritması Nedir?</h2>
+                        <div>
+                            <span class="text-flag-red text-[16px] font-semibold">admin</span>
+                            <span class="font-light text-[1.1rem] opacity-50 text-white before:content-['|'] before:mr-3 before:ml-2">4 ay önce</span>
+                        </div>
+                        <a href="" class="text-white rounded-full border-[2px] border-white px-[40px] py-[14px] text-[13px] leading-[13px] font-bold mt-[45px] cursor-pointer">Devamını Oku</a>
+
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+    </div>
+    <div class="bg-secondary-gray">
+        <div class="mx-auto w-[1200px] flex items-start phone:flex-col tablet:w-full pt-[45px] pb-[30px] relative  tablet:px-[20px]">
+            <div class="w-[75%] phone:w-[100%]">
+                <div class="flex">
+                    <h2 class="text-flag-red text-[1.5em] leading-[1.5rem] font-semibold">Dünya</h2>
+                </div>
+                <div class="mt-[50px] -ml-[10px] phone:ml-0 mb-[20px] flex items-center justify-between relative w-full bigger-phone:flex-wrap">
+                    <div class="mx-[10px] mt-[25px] phone:mx-0 relative flex flex-col justify-end items-center w-[25%] bigger-phone:w-[45%] phone:w-[100%] bigger-phone:mt-[20px] h-[439px] cursor-pointer overflow-hidden after:w-full after:h-full after:px-[10px] after:bg-gradient-to-b after:to-[rgba(0,0,0,0.8)] after:from-transparent after:absolute after:pointer-events-none">
+                        <img class="w-full h-full  object-cover hover:scale-110 transition-all duration-[1200ms]" src="https://ekonomikosesi.com/wp-content/uploads/2022/10/000AAAAAdfsdsfsdf-360x427.png" alt="">
+                        <div class="text-left p-[1em] flex flex-col justify-end w-full absolute z-10">
+                            <a href="" class="text-white text-[1.1em] font-bold no-underline">Dünyanın En Berrak Suya Sahip 10 Sahili</a>
+                            <div>
+                                <a href="" class="uppercase text-flag-red font-normal text-large no-underline">Seyahat</a>
+                                <span class="font-normal text-large text-white before:content-['|'] before:mr-3 before:ml-2">4 ay önce</span> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mx-[10px] mt-[25px] phone:mx-0 relative flex flex-col justify-end items-center w-[25%] bigger-phone:w-[45%] phone:w-[100%] bigger-phone:mt-[20px] h-[439px] cursor-pointer overflow-hidden after:w-full after:h-full after:px-[10px] after:bg-gradient-to-b after:to-[rgba(0,0,0,0.8)] after:from-transparent after:absolute after:pointer-events-none">
+                        <img class="w-full h-full  object-cover hover:scale-110 transition-all duration-[1200ms]" src="https://ekonomikosesi.com/wp-content/uploads/2022/10/000AAAAAdfsdsfsdf-360x427.png" alt="">
+                        <div class="text-left p-[1em] flex flex-col justify-end w-full absolute z-10">
+                            <a href="" class="text-white text-[1.1em] font-bold no-underline">Dünyanın En Berrak Suya Sahip 10 Sahili</a>
+                            <div>
+                                <a href="" class="uppercase text-flag-red font-normal text-large no-underline">Seyahat</a>
+                                <span class="font-normal text-large text-white before:content-['|'] before:mr-3 before:ml-2">4 ay önce</span> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mx-[10px] mt-[25px] phone:mx-0 relative flex flex-col justify-end items-center w-[25%] bigger-phone:w-[45%] phone:w-[100%] bigger-phone:mt-[20px] h-[439px] cursor-pointer overflow-hidden after:w-full after:h-full after:px-[10px] after:bg-gradient-to-b after:to-[rgba(0,0,0,0.8)] after:from-transparent after:absolute after:pointer-events-none">
+                        <img class="w-full h-full  object-cover hover:scale-110 transition-all duration-[1200ms]" src="https://ekonomikosesi.com/wp-content/uploads/2022/10/000AAAAAdfsdsfsdf-360x427.png" alt="">
+                        <div class="text-left p-[1em] flex flex-col justify-end w-full absolute z-10">
+                            <a href="" class="text-white text-[1.1em] font-bold no-underline">Dünyanın En Berrak Suya Sahip 10 Sahili</a>
+                            <div>
+                                <a href="" class="uppercase text-flag-red font-normal text-large no-underline">Seyahat</a>
+                                <span class="font-normal text-large text-white before:content-['|'] before:mr-3 before:ml-2">4 ay önce</span> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mx-[10px] mt-[25px] phone:mx-0 relative flex flex-col justify-end items-center w-[25%] bigger-phone:w-[45%] phone:w-[100%] bigger-phone:mt-[20px] h-[439px] cursor-pointer overflow-hidden after:w-full after:h-full after:px-[10px] after:bg-gradient-to-b after:to-[rgba(0,0,0,0.8)] after:from-transparent after:absolute after:pointer-events-none">
+                        <img class="w-full h-full  object-cover hover:scale-110 transition-all duration-[1200ms]" src="https://ekonomikosesi.com/wp-content/uploads/2022/10/000AAAAAdfsdsfsdf-360x427.png" alt="">
+                        <div class="text-left p-[1em] flex flex-col justify-end w-full absolute z-10">
+                            <a href="" class="text-white text-[1.1em] font-bold no-underline">Dünyanın En Berrak Suya Sahip 10 Sahili</a>
+                            <div>
+                                <a href="" class="uppercase text-flag-red font-normal text-large no-underline">Seyahat</a>
+                                <span class="font-normal text-large text-white before:content-['|'] before:mr-3 before:ml-2">4 ay önce</span> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="w-[25%] mt-[100px] min-w-[200px] phone:w-[100%] px-[25px] phone:px-0 relative phone:mt-[20px]">
+                <div class="flex items-center justify-between w-full h-auto min-h-[96px] mb-[15px] relative">
+                    <div class="w-[25%] absolute h-full phone:h-[145px] bg-bg-gray flex items-start">
+                        <img class="w-full object-cover hover:scale-110 transition-all duration-[1200ms] phone:h-full" src="https://ekonomikosesi.com/wp-content/uploads/2022/10/sfd0sfd0sfd-180x290.png" alt="">
+                    </div>
+                    <div class="w-[75%] ml-[25%] pl-[10px] min-h-[96px] flex flex-col justify-between h-auto phone:h-[145px]">
+                        <div class="flex flex-col justify-between">
+                            <span class="text-flag-red text-[0.7em] mb-[0.25rem] uppercase">Seyahat</span>
+                            <p class="text-text-gray font-bold text-[0.9em]">Dünyanın en güzel köyleri açıklandı! Listede Türkiye’den tek bir köy var</p>
+                        </div>
+                        <span class="font-light text-[0.8em] text-text-gray">4 ay önce</span>
+                    </div>   
+                </div>
+                <div class="flex items-center justify-between w-full h-auto min-h-[96px] mb-[15px] relative">
+                    <div class="w-[25%] absolute h-full phone:h-[145px] bg-bg-gray flex items-start">
+                        <img class="w-full object-cover hover:scale-110 transition-all duration-[1200ms] phone:h-full" src="https://ekonomikosesi.com/wp-content/uploads/2022/10/sfd0sfd0sfd-180x290.png" alt="">
+                    </div>
+                    <div class="w-[75%] ml-[25%] pl-[10px] min-h-[96px] flex flex-col justify-between h-auto phone:h-[145px]">
+                        <div class="flex flex-col justify-between">
+                            <span class="text-flag-red text-[0.7em] mb-[0.25rem] uppercase">Seyahat</span>
+                            <p class="text-text-gray font-bold text-[0.9em]">Dünyanın en güzel köyleri açıklandı! Listede Türkiye’den tek bir köy var</p>
+                        </div>
+                        <span class="font-light text-[0.8em] text-text-gray">4 ay önce</span>
+                    </div>   
+                </div>
+                <div class="flex items-center justify-between w-full h-auto min-h-[96px] mb-[15px] relative">
+                    <div class="w-[25%] absolute h-full phone:h-[145px] bg-bg-gray flex items-start">
+                        <img class="w-full object-cover hover:scale-110 transition-all duration-[1200ms] phone:h-full" src="https://ekonomikosesi.com/wp-content/uploads/2022/10/sfd0sfd0sfd-180x290.png" alt="">
+                    </div>
+                    <div class="w-[75%] ml-[25%] pl-[10px] min-h-[96px] flex flex-col justify-between h-auto phone:h-[145px]">
+                        <div class="flex flex-col justify-between">
+                            <span class="text-flag-red text-[0.7em] mb-[0.25rem] uppercase">Seyahat</span>
+                            <p class="text-text-gray font-bold text-[0.9em]">Dünyanın en güzel köyleri açıklandı! Listede Türkiye’den tek bir köy var</p>
+                        </div>
+                        <span class="font-light text-[0.8em] text-text-gray">4 ay önce</span>
+                    </div>   
+                </div>
+                <div class="border-t border-t-sub-menu-border w-full">
+                    <p class="text-text-gray text-[1em] mt-[1em]">Güncel <a class="text-flag-red" href="">Dünya Haberleri</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
   <script src="script.js"></script>
 </body>
