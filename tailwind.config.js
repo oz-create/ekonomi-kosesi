@@ -11,7 +11,8 @@ module.exports = {
         'mobile-menu-bg' : 'rgb(19,19,21)',
         'flag-red': '#E62B34',
         'bg-gray': '#DBDBEA',
-        'secondary-gray': '#efefef'
+        'secondary-gray': '#efefef',
+        'footer-bg-color': '#131315'
       },
       transitionTimingFunction: {
         'in-expo': 'cubic-bezier(.230,1,.320,1)',

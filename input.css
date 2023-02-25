@@ -96,6 +96,12 @@ input:checked~span:nth-last-child(2) {
   .swiper-button-prev{
     left: 50px;
   }
+
+  .newImg:hover + div > a{
+    padding-bottom: 5px;
+  }
+
+
   @media (max-width:1200px) {
 
     .swiper-pagination-bullet{
