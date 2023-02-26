@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="output.css">
 </head>
 <body>
-    <nav id="navbar" class="mx-auto w-full h-[90px] tablet:h-[54px] tablet:animate-none  fixed top-0 z-50 flex justify-center items-center transition-all duration-500 ">
+    <nav id="navbar" class="navbarMainPage mx-auto w-full h-[90px] tablet:h-[54px] tablet:animate-none  fixed top-0 z-50 flex justify-center items-center transition-all duration-500 ">
         <div class="h-full tablet:w-[100%] w-[1200px] mx-auto flex tablet:justify-start justify-between items-center border-b border-b-border-color ">
             <div id="menuToggle" class="tablet:grid top-[15px] z-10 w-auto hidden mx-5 left-[320px] phone-sm:left-[70vw]"> 
                 <input type="checkbox" class="block w-[40px] h-[32px] absolute cursor-pointer opacity-0 z-20">
@@ -25,7 +25,7 @@
                  <span class="block w-[27px] h-[2px] mt-2 relative bg-white z-1 navMenuToggle hover:bg-vivid-red hover:mt-3"></span> 
                  <span class="block w-[27px] h-[2px] mt-2 relative bg-white z-1 navMenuToggle hover:bg-vivid-red hover:mt-3"></span> 
             </div>
-            <a href="https://ekonomikosesi.com/" id="navHeader" class="font-extrabold text-2xl text-white no-underline hover:text-vivid-red transition-colors ease-linear duration-100 phone:text-[8vw]">Ekonomi Köşesi</a>
+            <a href="https://ekonomikosesi.com/" id="navHeader" class="font-extrabold text-2xl text-white no-underline hover:text-vivid-red transition-colors ease-linear duration-100 phone-sm:text-[8vw]">Ekonomi Köşesi</a>
             <ul id="navMenu" class="items-center justify-between w-[840px] pl-[50px] pr-[20px] tablet:hidden flex">
                 <li id="navMenuItem" class="">
                     <a href="" class=" text-white text-medium leading-[90px] relative block border-b-4 border-b-vivid-red hover:text-vivid-red transition-color ease-linear duration-100">Ana Sayfa</a>
@@ -34,7 +34,10 @@
                     <a href="" class=" text-white text-medium leading-[90px] relative block hover:text-vivid-red transition-color ease-linear duration-100">Gazete Manşetleri</a>
                 </li>
                 <li id="navMenuItem" class="">
-                    <a href="" class=" text-white text-medium leading-[90px] relative flex items-center"><span class="hover:text-vivid-red transition-color ease-linear duration-100">Haberler</span><i id="newsSubToggle" class='bx bx-chevron-down w-[10px] ml-1'></i></a>
+                    <a href="" class=" text-white text-medium leading-[90px] relative flex items-center">
+                        <span class="hover:text-vivid-red transition-color ease-linear duration-100">Haberler</span>
+                        <i id="newsSubToggle" class='bx bx-chevron-down w-[10px] ml-1'></i>
+                    </a>
                     <ul id="newsSubMenu" class="absolute top-auto bg-white w-[220px] transition-all ease duration-500 translate-y-[20px] opacity-0">
                         <li class="text-xl font-normal text-text-gray px-[1.5em] py-[1em] relative cursor-pointer after:bg-sub-menu-border after:h-[1px] after:block after:absolute after:bottom-0 after:left-[1.5em] after:right-[1.5em] hover:shadow-[inset_5px_0_0_0_#e62b34] hover:text-vivid-red transition-color ease transition-shadow duration-300"><a href="https://ekonomikosesi.com/magazin/" class="text-xl leading-[1.8]">Magazin</a></li>
                         <li class="text-xl font-normal text-text-gray px-[1.5em] py-[1em] relative cursor-pointer after:bg-sub-menu-border after:h-[1px] after:block after:absolute after:bottom-0 after:left-[1.5em] after:right-[1.5em] hover:shadow-[inset_5px_0_0_0_#e62b34] hover:text-vivid-red transition-color ease transition-shadow duration-300"><a href="https://ekonomikosesi.com/dunya/" class="text-xl leading-[1.8]">Dünya</a></li>
@@ -73,7 +76,10 @@
                         <a href="" class="text-white text-medium px-[2em] py-[1em] relative block hover:text-vivid-red transition-color ease-linear duration-100">Gazete Manşetleri</a>
                     </li>
                     <li class="">
-                        <a href="" class="text-white text-medium px-[2em] py-[1em] relative  flex items-center"><span class="hover:text-vivid-red transition-color ease-linear duration-100">Haberler</span><i id="newsSubToggleMobile" class='bx bx-chevron-down w-[10px] absolute right-[-72px] phone-sm:right-[-43px]'></i></a>
+                        <a href="" class="text-white text-medium px-[2em] py-[1em] flex items-center justify-center">
+                            <span class="hover:text-vivid-red transition-color ease-linear duration-100 ml-1">Haberler</span>
+                            <i id="newsSubToggleMobile" class="bx bx-chevron-down w-[10px] absolute right-[25px]"></i>
+                        </a>
                         <ul id="newsSubMenuMobile" class="top-auto transition-height flex-col items-center ease duration-500 h-[0px] hidden">
                             <li class="text-xl font-normal text-white px-[1.5em] py-[1em] relative cursor-pointer"><a href="https://ekonomikosesi.com/magazin/" class="text-xl leading-[1.8]">Magazin</a></li>
                             <li class="text-xl font-normal text-white px-[1.5em] py-[1em] relative cursor-pointer"><a href="https://ekonomikosesi.com/dunya/" class="text-xl leading-[1.8]">Dünya</a></li>
@@ -589,8 +595,8 @@
                 </div>
             </div>
 
-            <div class="w-full h-auto mt-[4em]">
-                <img class="mt-[18px]" src="https://ekonomikosesi.com/wp-content/uploads/2023/01/blackrock_logo.png" alt="">
+            <div class="w-full h-auto mt-[4em] phone-sm:w-full">
+                <img class="mt-[18px] phone-sm:w-full" src="https://ekonomikosesi.com/wp-content/uploads/2023/01/blackrock_logo.png" alt="">
             </div>
         </div>
     </div>

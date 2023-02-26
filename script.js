@@ -52,17 +52,21 @@ function scrollFunction() {
     for (let i = 0; i < document.getElementById("navMenu").children.length; i++) {
         document.getElementById("navMenu").children[i].firstElementChild.classList.add("navMenuItemDark")
     }
+    document.getElementById("navHeader").style.fontSize = "1.5em";
   }else{
      document.getElementById("navbar").classList.remove("navbarWhite");
-     document.getElementById("navHeader").style.color = "#ffffff";
-     document.getElementById("searchIcon").style.color = "#ffffff";
-     for (let i = 0; i < document.querySelectorAll("#menuToggle .navMenuToggle").length; i++) {
-      document.querySelectorAll("#menuToggle .navMenuToggle")[i].style.backgroundColor = "#ffffff";
-    }
+     if(document.getElementById("navbar").classList.contains("navbarMainPage")){
+      document.getElementById("navHeader").style.color = "#ffffff";
+      document.getElementById("searchIcon").style.color = "#ffffff";
+      for (let i = 0; i < document.querySelectorAll("#menuToggle .navMenuToggle").length; i++) {
+       document.querySelectorAll("#menuToggle .navMenuToggle")[i].style.backgroundColor = "#ffffff";
+      }
+     }
      document.getElementById("navHeader").style.fontSize = "2em";
      for (let i = 0; i < document.getElementById("navMenu").children.length; i++) {
         document.getElementById("navMenu").children[i].firstElementChild.classList.remove("navMenuItemDark")
     }
+    document.getElementById("navHeader").style.fontSize = "2em";
   }
 }
 
