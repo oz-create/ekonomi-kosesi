@@ -28,6 +28,43 @@ document.getElementById("menuToggle").addEventListener("click",()=>{
     document.getElementById("menuToggle").classList.toggle("menuToggleClass");
     document.getElementById("navHeader").classList.toggle("navHeaderToggleClass");
 })
+document.getElementById("searchIcon").addEventListener('click',()=>{
+  document.getElementById("searchDiv").classList.add("searchDivShow")
+})
+document.getElementById("searchIconMobil").addEventListener('click',()=>{
+  document.getElementById("searchDiv").classList.add("searchDivShow")
+})
+document.getElementById("searchCloseIcon").addEventListener('click',()=>{
+  document.getElementById("searchDiv").classList.remove("searchDivShow")
+})
+// scroll function navbar
+window.onscroll = function(){scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 0) {
+    document.getElementById("navbar").classList.add("navbarWhite");
+    document.getElementById("navHeader").style.color = "#181818";
+    document.getElementById("searchIcon").style.color = "#181818";
+    for (let i = 0; i < document.querySelectorAll("#menuToggle .navMenuToggle").length; i++) {
+      document.querySelectorAll("#menuToggle .navMenuToggle")[i].style.backgroundColor = "#181818";
+    }
+    document.getElementById("navHeader").style.fontSize = "1.5em";
+    for (let i = 0; i < document.getElementById("navMenu").children.length; i++) {
+        document.getElementById("navMenu").children[i].firstElementChild.classList.add("navMenuItemDark")
+    }
+  }else{
+     document.getElementById("navbar").classList.remove("navbarWhite");
+     document.getElementById("navHeader").style.color = "#ffffff";
+     document.getElementById("searchIcon").style.color = "#ffffff";
+     for (let i = 0; i < document.querySelectorAll("#menuToggle .navMenuToggle").length; i++) {
+      document.querySelectorAll("#menuToggle .navMenuToggle")[i].style.backgroundColor = "#ffffff";
+    }
+     document.getElementById("navHeader").style.fontSize = "2em";
+     for (let i = 0; i < document.getElementById("navMenu").children.length; i++) {
+        document.getElementById("navMenu").children[i].firstElementChild.classList.remove("navMenuItemDark")
+    }
+  }
+}
 
 
 const swiper = new Swiper('.swiper', {

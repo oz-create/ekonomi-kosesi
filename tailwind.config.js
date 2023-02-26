@@ -28,7 +28,8 @@ module.exports = {
     screens: {
       'tablet': {'max': '1200px'},
       'bigger-phone': {'max': '800px'},
-      'phone' : {'max': '650px'}
+      'phone' : {'max': '650px'},
+      'phone-sm': {'max': '360px'}
     },
   },
   plugins: [],

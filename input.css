@@ -25,16 +25,41 @@ body{
     transform-origin: 25px 0;
     transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0), background 0.3s cubic-bezier(0.77, 0.2, 0.05, 1.0), opacity 0.5s ease;
 }
+.navbarWhite{
+  background-color: #ffffff;
+  animation-name: navbar2;
+  animation-duration: 0.5s;
+  animation-delay: 1s;
+  animation-fill-mode: backwards; 
+  height: 54px;
+  box-shadow: 0 0 10px 0 rgb(0 0 0 / 50%);
+}
+.navMenuItemDark{
+  color: #181818;
+  line-height: 54px;
+}
+.searchDivShow{
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+}
+@keyframes navbar2 {
+  0%{
+    transform: translateY(-110%);
+  }
+  100%{
+    transform: translateY(0%);
+  }
+} 
 
 #menuToggle input:checked~span {
     opacity: 1;
-    transform: rotate(45deg) translate(0, -1px);
-    background: #cf2e2e;
+    transform: rotate(45deg) translate(1px, 0px);
+    background: #cf2e2e !important;
 }
 input:checked~span:nth-last-child(2) {
     opacity: 1;
     transform: rotate(-45deg) translate(4px, -6px) !important;
-    background: #cf2e2e;
+    background: #cf2e2e !important;
 }
 #menuToggle input:checked~span:nth-last-child(3) {
     opacity: 0;
