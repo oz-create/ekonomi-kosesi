@@ -2332,6 +2332,10 @@ input:checked~span:nth-last-child(2) {
     flex-wrap: wrap;
   }
 
+  .bigger-phone\:justify-center {
+    justify-content: center;
+  }
+
   .bigger-phone\:border {
     border-width: 1px;
   }
