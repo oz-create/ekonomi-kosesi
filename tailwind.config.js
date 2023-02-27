@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["src/components/anasayfa.html","src/components/kategori.html"],
+  content: ["src/components/anasayfa.html","src/components/kategori.html","src/components/hakkımızda.html"],
   theme: {
     extend: {
       colors: {
