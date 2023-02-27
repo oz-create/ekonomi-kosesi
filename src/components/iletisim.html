@@ -123,7 +123,7 @@
     </nav>
     <div id="searchDiv" class="fixed top-0 w-full h-[100vh] bg-white z-50 flex justify-center items-center transition-all duration-1000 opacity-0 translate-y-[100%]">
         <div class="relative w-[1200px] h-full tablet:w-full flex justify-center items-center">
-            <i id="searchCloseIcon" class='bx bx-x absolute top-[10px] right-0 text-[90px] text-flag-red cursor-pointer hover:rotate-180 hover:text-vivid-red transition-all'></i>
+            <i id="searchCloseIcon" class='pe-7s-close absolute top-[10px] right-0 text-[90px] text-flag-red cursor-pointer hover:rotate-180 hover:text-vivid-red transition-all'></i>
             <div class="flex items-center justify-between border-2 border-sub-menu-border rounded-full py-[1em] pr-[1em] mx-[2rem]">
                 <input type="text" class="w-[992px] tablet:w-[90%] text-[3em] font-light h-full rounded-full outline-none px-[1em] " placeholder="Arıyor...">
                 <button type="submit"><i class='bx bx-search text-sub-menu-border text-[4em] cursor-pointer hover:text-flag-red transition-all'></i></button>
@@ -207,23 +207,26 @@
                 </div>
             </div>
             <div class="w-[50%] tablet:w-full px-[20px]">
-                <div class="">
-                    <label for="" class="text-text-gray leading-[1.8] font-normal text-[1em]">Your Name</label>
-                    <input type="text" name="" id="" class="bg-transparent border border-[rgba(0,0,0,.1)] outline-none p-[0.8em] leading-[1] h-[3.2em] w-full transition-all duration-500 ease-in focus:shadow-[0px_0px_7px_0px_#E62B34] focus:outline-1 focus:outline-text-gray mb-[1em]">
+                <div class="flex flex-col">
+                    <label for=""  class="text-text-gray leading-[1.8] font-normal text-[1em]">Your Name</label>
+                    <input type="text" id="name" name="" class="bg-transparent border border-[rgba(0,0,0,.1)] outline-none p-[0.8em] leading-[1] h-[3.2em] w-full transition-all duration-500 ease-in focus:shadow-[0px_0px_7px_0px_#E62B34] focus:outline-1 focus:outline-text-gray mb-[1em]">
+                    <span class="text-flag-red text-[1em] mb-[1em] hidden" id="nameErrorMessage">Please fill out this field.</span>
                     <label for="" class="text-text-gray leading-[1.8] font-normal text-[1em]">Your email</label>
-                    <input type="text" name="" id="" class="bg-transparent border border-[rgba(0,0,0,.1)] outline-none p-[0.8em] leading-[1] h-[3.2em] w-full transition-all duration-500 ease-in focus:shadow-[0px_0px_7px_0px_#E62B34] focus:outline-1 focus:outline-text-gray mb-[1em]">
+                    <input type="text" name="" id="email" class="bg-transparent border border-[rgba(0,0,0,.1)] outline-none p-[0.8em] leading-[1] h-[3.2em] w-full transition-all duration-500 ease-in focus:shadow-[0px_0px_7px_0px_#E62B34] focus:outline-1 focus:outline-text-gray mb-[1em]">
+                    <span class="text-flag-red text-[1em] mb-[1em] hidden" id="emailErrorMessage">Please fill out this field.</span>
                     <label for="" class="text-text-gray leading-[1.8] font-normal text-[1em]">Subject</label>
-                    <input type="text" name="" id="" class="bg-transparent border border-[rgba(0,0,0,.1)] outline-none p-[0.8em] leading-[1] h-[3.2em] w-full transition-all duration-500 ease-in focus:shadow-[0px_0px_7px_0px_#E62B34] focus:outline-1 focus:outline-text-gray mb-[1em]">
+                    <input type="text" name="" id="subject" class="bg-transparent border border-[rgba(0,0,0,.1)] outline-none p-[0.8em] leading-[1] h-[3.2em] w-full transition-all duration-500 ease-in focus:shadow-[0px_0px_7px_0px_#E62B34] focus:outline-1 focus:outline-text-gray mb-[1em]">
+                    <span class="text-flag-red text-[1em] mb-[1em] hidden" id="subjectErrorMessage">Please fill out this field.</span>
                     <label for="" class="text-text-gray leading-[1.8] font-normal text-[1em]">Your message (optional)</label>
                     <textarea rows="4" cols="50" class="h-[290px] bg-transparent border border-[rgba(0,0,0,.1)] outline-none p-[0.8em] leading-[1] w-full transition-all duration-500 ease-in focus:shadow-[0px_0px_7px_0px_#E62B34] focus:outline-1 focus:outline-text-gray mb-[1em]"></textarea>
                     <div class="flex items-center relative">
-                        <button type="submit" class="border-flag-red border-[1.5px] rounded-[50px]">
+                        <button id="submitButton" type="submit" class="border-flag-red border-[1.5px] rounded-[50px]">
                             <span class="socialMediaIcon w-[140px] h-[40px] bg-transparent rounded-[50px] flex items-center justify-center text-white hover:text-flag-red hover:before:scale-0 hover:before:transition-all before:duration-300 before:w-[140px] before:h-[40px] before:rounded-[50px] before:bg-flag-red before:flex before:justify-center before:items-center">
                                <span class="absolute flex items-center w-full justify-center px-[2em] uppercase text-[0.8em] font-normal">Submit</span>
                             </span>
                         </button>
                     </div>
-                    
+                    <span class="border-[#ffb900] border-2 py-[0.2em] px-[1em] text-[1em] text-text-gray mt-[3em] mb-[2em]">One or more fields have an error. Please check and try again.</span>
                 </div>
             </div>
         </div>
