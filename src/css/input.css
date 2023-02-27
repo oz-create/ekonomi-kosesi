@@ -14,9 +14,11 @@ body{
     font-family: 'Montserrat', sans-serif;
 }
 .subMenuToggle{
-    opacity: 1 !important;
-    transform: translateY(0) !important;
+    opacity: 1;
+    transform: translateY(0px);
+    pointer-events: all;
 }
+
 .subMenuMobile{
   display: flex;
   height: auto;
