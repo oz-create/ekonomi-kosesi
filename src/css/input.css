@@ -13,12 +13,26 @@ html {
 body{
     font-family: 'Montserrat', sans-serif;
 }
-.subMenuToggle{
-    opacity: 1;
-    transform: translateY(0px);
-    pointer-events: all;
+#news:hover + #newsSubMenu{
+  opacity: 1;
+  transform: translateY(0px);
+  pointer-events: all;
 }
-
+#newsSubMenu:hover{
+  opacity: 1;
+  transform: translateY(0px);
+  pointer-events: all;
+}
+#languages:hover + #languageSubMenu{
+  opacity: 1;
+  transform: translateY(0px);
+  pointer-events: all;
+}
+#languageSubMenu:hover{
+  opacity: 1;
+  transform: translateY(0px);
+  pointer-events: all;
+}
 .subMenuMobile{
   display: flex;
   height: auto;

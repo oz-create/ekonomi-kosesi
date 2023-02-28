@@ -1,19 +1,7 @@
-document.getElementById("newsSubToggle").addEventListener("click",(e)=>{
-    document.getElementById("newsSubMenu").classList.toggle("subMenuToggle");
-    document.getElementById("newsSubToggle").classList.toggle("bx-chevron-up");
-    document.getElementById("newsSubToggle").classList.toggle("bx-chevron-down");
-    e.preventDefault();
-})
 document.getElementById("newsSubToggleMobile").addEventListener("click",(e)=>{
     document.getElementById("newsSubMenuMobile").classList.toggle("subMenuMobile");
     document.getElementById("newsSubToggleMobile").classList.toggle("bx-chevron-up");
     document.getElementById("newsSubToggleMobile").classList.toggle("bx-chevron-down");
-    e.preventDefault();
-})
-document.getElementById("languageSubToggle").addEventListener("click",(e)=>{
-    document.getElementById("languageSubMenu").classList.toggle("subMenuToggle");
-    document.getElementById("languageSubToggle").classList.toggle("bx-chevron-up");
-    document.getElementById("languageSubToggle").classList.toggle("bx-chevron-down");
     e.preventDefault();
 })
 document.getElementById("languageSubToggleMobile").addEventListener("click",(e)=>{
