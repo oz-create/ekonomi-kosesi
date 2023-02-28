@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["src/components/anasayfa.html","src/components/kategori.html","src/components/hakkımızda.html","src/components/iletisim.html"],
+  content: ["src/components/anasayfa.html","src/components/kategori.html","src/components/hakkımızda.html","src/components/iletisim.html","src/components/haber-detay.html"],
   theme: {
     extend: {
       colors: {
@@ -26,7 +26,7 @@ module.exports = {
       'large': '0.85em'
     },
     screens: {
-      'tablet': {'max': '1200px'},
+      'tablet': {'max': '1240px'},
       'bigger-phone': {'max': '800px'},
       'phone' : {'max': '650px'},
       'phone-sm': {'max': '360px'}
