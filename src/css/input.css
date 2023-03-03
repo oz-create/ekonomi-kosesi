@@ -13,6 +13,18 @@ html {
 body{
     font-family: 'Montserrat', sans-serif;
 }
+.redLine::after{
+  content: ' ';
+  display: block;
+  position: absolute;
+  z-index: 5;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  pointer-events: none;
+  height: 4px;
+  background-color: #E62B34;
+}
 #news:hover + #newsSubMenu{
   opacity: 1;
   transform: translateY(0px);
@@ -152,8 +164,8 @@ input:checked~span:nth-last-child(2) {
         display: none;
     }
   }
-  @media (max-width:560px) {
+  /* @media (max-width:560px) {
     html {
       font-size: 12px;
     }
-  }
+  } */
