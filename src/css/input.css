@@ -153,8 +153,14 @@ input:checked~span:nth-last-child(2) {
   .newImg:hover + div > a{
     padding-bottom: 5px;
   }
-  
-
+  .commentIcon:hover + .commentIcon::before{
+    transform: scale(1);
+  }
+.tooltip:hover > span{
+  display: flex;
+  position:fixed;
+  overflow:hidden;
+}
   @media (max-width:1200px) {
 
     .swiper-pagination-bullet{
