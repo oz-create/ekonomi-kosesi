@@ -15,4 +15,11 @@ document.getElementById("submitButton").addEventListener("click",()=>{
     }else{
       document.getElementById("subjectErrorMessage").style.display = "none";
     }
+
+    if(document.getElementById("name").value == "" || document.getElementById("email").value == "" || document.getElementById("subject").value == ""){
+        document.querySelector(".warnMessage").style.visibility = "visible";
+        setTimeout(() => {
+            document.querySelector(".warnMessage").style.visibility = "hidden";
+        }, 3000);
+    }
   })
