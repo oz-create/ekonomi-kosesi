@@ -33,7 +33,7 @@ function scrollFunction() {
     document.getElementById("navbar").classList.add("navbarWhite");
     document.getElementById("navHeader").style.color = "#181818";
     document.getElementById("searchIcon").style.color = "#181818";
-    document.querySelector("#navbar > div").style.border = "none";
+    document.getElementById("navMenuContainer").classList.add("borderNone");
     for (let i = 0; i < document.querySelectorAll("#menuToggle .navMenuToggle").length; i++) {
       document.querySelectorAll("#menuToggle .navMenuToggle")[i].style.backgroundColor = "#181818";
     }
@@ -44,10 +44,10 @@ function scrollFunction() {
     document.getElementById("navHeader").style.fontSize = "1.5em";
   }else{
      document.getElementById("navbar").classList.remove("navbarWhite");
+     document.getElementById("navMenuContainer").classList.add("navBorder");
      if(document.getElementById("navbar").classList.contains("navbarMainPage")){
       document.getElementById("navHeader").style.color = "#ffffff";
       document.getElementById("searchIcon").style.color = "#ffffff";
-      document.querySelector("#navbar > div").style.borderBottom = "1px solid rgba(255,255,255,.2)";
       for (let i = 0; i < document.querySelectorAll("#menuToggle .navMenuToggle").length; i++) {
        document.querySelectorAll("#menuToggle .navMenuToggle")[i].style.backgroundColor = "#ffffff";
       }
@@ -57,58 +57,6 @@ function scrollFunction() {
         document.getElementById("navMenu").children[i].firstElementChild.classList.remove("navMenuItemDark")
     }
     document.getElementById("navHeader").style.fontSize = "2em";
+    document.getElementById("navMenuContainer").classList.remove("borderNone");
   }
 }
-
-
-const swiper = new Swiper('.swiper', {
-    // Optional parameters
-    direction: 'horizontal',
-    loop: true,
-    autoplay:true,
-  
-    // If we need pagination
-    pagination: {
-      el: '.swiper-pagination',
-      type: 'bullets',
-    },
-  
-    // Navigation arrows
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-  
-  });
-
-//tooltip
-var tooltips = document.querySelectorAll('.tooltip span');
-
-window.onmousemove = function (e) {
-    var x = (e.clientX + 20) + 'px',
-        y = (e.clientY + 20) + 'px';
-    for (var i = 0; i < tooltips.length; i++) {
-        tooltips[i].style.top = y;
-        tooltips[i].style.left = x;
-    }
-};
-
-//Form Error Messages
-document.getElementById("submitButton").addEventListener("click",()=>{
-  if(document.getElementById("name").value == ""){
-    document.getElementById("nameErrorMessage").style.display = "block";
-  }else{
-    document.getElementById("nameErrorMessage").style.display = "none";
-  }
-  if(document.getElementById("email").value == ""){
-    document.getElementById("emailErrorMessage").style.display = "block";
-  }else{
-    document.getElementById("emailErrorMessage").style.display = "none";
-  }
-  if(document.getElementById("subject").value == ""){
-    document.getElementById("subjectErrorMessage").style.display = "block";
-  }else{
-    document.getElementById("subjectErrorMessage").style.display = "none";
-  }
-})
-

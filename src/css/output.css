@@ -1248,6 +1248,23 @@ video {
   border-top-color: rgb(255 255 255 / var(--tw-border-opacity));
 }
 
+.border-b-\[\] {
+  border-bottom-color: ;
+}
+
+.border-b-\[rgba\(255\2c 255\2c 0\.2\)\] {
+  --tw-border-opacity: 1;
+  border-bottom-color: rgba(255, 255, 0.2, var(--tw-border-opacity));
+}
+
+.border-b-\[rgba\(255\2c 255\2c 255\2c 0\.2\)\] {
+  border-bottom-color: rgba(255,255,255,0.2);
+}
+
+.border-b-\[rgba\(0\2c 0\2c 0\2c 0\.2\)\] {
+  border-bottom-color: rgba(0,0,0,0.2);
+}
+
 .border-opacity-20 {
   --tw-border-opacity: 0.2;
 }
@@ -1477,10 +1494,6 @@ video {
 
 .pl-\[20px\] {
   padding-left: 20px;
-}
-
-.pl-\[50px\] {
-  padding-left: 50px;
 }
 
 .pr-\[1em\] {
@@ -1906,6 +1919,10 @@ html {
 
 body{
   font-family: 'Montserrat', sans-serif;
+}
+
+.borderNone{
+  border-bottom: none;
 }
 
 .redLine::after{
