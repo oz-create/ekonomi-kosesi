@@ -85,6 +85,9 @@ input:checked~span:nth-last-child(2) {
 .navHeaderToggleClass{
     display: none;
 }
+.sliderBottomItem:hover > .sliderBottomItemImg::before{
+  border-width: 5px;
+}  
 .swiper{
     width: 100%;
   }
