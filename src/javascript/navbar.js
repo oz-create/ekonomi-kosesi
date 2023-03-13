@@ -32,7 +32,7 @@ function scrollFunction() {
   if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 0) {
     document.getElementById("navbar").classList.add("navbarWhite");
     document.getElementById("navHeader").style.color = "#181818";
-    document.getElementById("searchIcon").style.color = "#181818";
+    document.getElementById("searchIcon").style.fill = "#181818";
     document.getElementById("navMenuContainer").classList.add("borderNone");
     for (let i = 0; i < document.querySelectorAll("#menuToggle .navMenuToggle").length; i++) {
       document.querySelectorAll("#menuToggle .navMenuToggle")[i].style.backgroundColor = "#181818";
@@ -47,7 +47,7 @@ function scrollFunction() {
      document.getElementById("navMenuContainer").classList.add("navBorder");
      if(document.getElementById("navbar").classList.contains("navbarMainPage")){
       document.getElementById("navHeader").style.color = "#ffffff";
-      document.getElementById("searchIcon").style.color = "#ffffff";
+      document.getElementById("searchIcon").style.fill = "#ffffff";
       for (let i = 0; i < document.querySelectorAll("#menuToggle .navMenuToggle").length; i++) {
        document.querySelectorAll("#menuToggle .navMenuToggle")[i].style.backgroundColor = "#ffffff";
       }

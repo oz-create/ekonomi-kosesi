@@ -789,6 +789,14 @@ video {
   margin-top: 75px;
 }
 
+.ml-\[\] {
+  margin-left: ;
+}
+
+.ml-\[5px\] {
+  margin-left: 5px;
+}
+
 .block {
   display: block;
 }
@@ -881,10 +889,6 @@ video {
   height: 597px;
 }
 
-.h-\[81px\] {
-  height: 81px;
-}
-
 .h-\[90px\] {
   height: 90px;
 }
@@ -931,6 +935,10 @@ video {
 
 .w-\[120px\] {
   width: 120px;
+}
+
+.w-\[13px\] {
+  width: 13px;
 }
 
 .w-\[140px\] {
@@ -1021,10 +1029,6 @@ video {
   width: 75%;
 }
 
-.w-\[81px\] {
-  width: 81px;
-}
-
 .w-\[840px\] {
   width: 840px;
 }
@@ -1043,6 +1047,54 @@ video {
 
 .w-full {
   width: 100%;
+}
+
+.w-\[15px\] {
+  width: 15px;
+}
+
+.w-\[20px\] {
+  width: 20px;
+}
+
+.w-\[19px\] {
+  width: 19px;
+}
+
+.w-\[18px\] {
+  width: 18px;
+}
+
+.w-\[17px\] {
+  width: 17px;
+}
+
+.w-\[12px\] {
+  width: 12px;
+}
+
+.w-\[1\.5em\] {
+  width: 1.5em;
+}
+
+.w-\[2\.8rem\] {
+  width: 2.8rem;
+}
+
+.w-\[1\.3em\] {
+  width: 1.3em;
+}
+
+.w-\[1em\] {
+  width: 1em;
+}
+
+.w-\[1\.2em\] {
+  width: 1.2em;
+}
+
+.w-\[2em\] {
+  width: 2em;
 }
 
 .min-w-\[200px\] {
@@ -1069,6 +1121,18 @@ video {
 
 .translate-y-\[20px\] {
   --tw-translate-y: 20px;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.scale-75 {
+  --tw-scale-x: .75;
+  --tw-scale-y: .75;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.scale-50 {
+  --tw-scale-x: .5;
+  --tw-scale-y: .5;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -1309,6 +1373,18 @@ video {
 
 .bg-no-repeat {
   background-repeat: no-repeat;
+}
+
+.fill-text-gray {
+  fill: #181818;
+}
+
+.fill-white {
+  fill: #fff;
+}
+
+.fill-inherit {
+  fill: inherit;
 }
 
 .object-cover {
@@ -2392,6 +2468,14 @@ input:checked~span:nth-last-child(2) {
   background-color: rgb(230 43 52 / var(--tw-bg-opacity));
 }
 
+.hover\:fill-white:hover {
+  fill: #fff;
+}
+
+.hover\:fill-flag-red:hover {
+  fill: #E62B34;
+}
+
 .hover\:text-flag-red:hover {
   --tw-text-opacity: 1;
   color: rgb(230 43 52 / var(--tw-text-opacity));
@@ -2628,6 +2712,10 @@ input:checked~span:nth-last-child(2) {
 
   .tablet\:bg-transparent {
     background-color: transparent;
+  }
+
+  .tablet\:fill-white {
+    fill: #fff;
   }
 
   .tablet\:px-\[20px\] {
