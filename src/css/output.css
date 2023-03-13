@@ -1097,6 +1097,14 @@ video {
   width: 2em;
 }
 
+.w-\[4em\] {
+  width: 4em;
+}
+
+.w-\[8em\] {
+  width: 8em;
+}
+
 .min-w-\[200px\] {
   min-width: 200px;
 }
@@ -1385,6 +1393,14 @@ video {
 
 .fill-inherit {
   fill: inherit;
+}
+
+.fill-sub-menu-border {
+  fill: rgba(0,0,0,.1);
+}
+
+.fill-flag-red {
+  fill: #E62B34;
 }
 
 .object-cover {
@@ -2474,6 +2490,10 @@ input:checked~span:nth-last-child(2) {
 
 .hover\:fill-flag-red:hover {
   fill: #E62B34;
+}
+
+.hover\:fill-vivid-red:hover {
+  fill: #cf2e2e;
 }
 
 .hover\:text-flag-red:hover {
