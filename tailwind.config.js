@@ -26,6 +26,7 @@ module.exports = {
       'large': '0.85em'
     },
     screens: {
+      'desktop' : '1200px',
       'tablet': {'max': '1240px'},
       'bigger-phone': {'max': '800px'},
       'phone' : {'max': '650px'},

@@ -19,8 +19,8 @@
     <link rel="stylesheet" href="../css/output.css">
 </head>
 <body>
-    <nav id="navbar" class="mx-auto w-full h-[90px] tablet:h-[54px] tablet:animate-none borber-b border-border-color sticky top-0 z-50 flex justify-center items-center transition-all duration-500 ">
-        <div id="navMenuContainer" class="h-full tablet:w-[100%] w-[1200px] mx-auto flex tablet:justify-start justify-between items-center border-b border-b-[rgba(0,0,0,0.2)]">
+    <nav id="navbar" class="mx-auto w-full h-[90px] tablet:h-[54px] tablet:animate-none  sticky top-0 z-50 flex justify-center items-center transition-all duration-500">
+        <div class="fixed top-0 left-0 w-full h-[54px] hidden tablet:flex items-center justify-start translate-x-0">
             <div id="menuToggle" class="tablet:grid top-[15px] z-10 w-auto hidden mx-5 left-[320px] phone-sm:left-[70vw]"> 
                 <input type="checkbox" class="block w-[40px] h-[32px] absolute cursor-pointer opacity-0 z-20">
                 <div id="closeMenu" class="fixed w-[100vw] h-[100vh] z-0 top-[-50px] left-0 content hidden"></div>
@@ -28,100 +28,61 @@
                  <span class="block w-[27px] h-[2px] mt-2 relative bg-text-gray z-1 navMenuToggle hover:bg-flag-red hover:mt-3"></span> 
                  <span class="block w-[27px] h-[2px] mt-2 relative bg-text-gray z-1 navMenuToggle hover:bg-flag-red hover:mt-3"></span> 
             </div>
-            <a href="anasayfa.html" id="navHeader" class="font-extrabold text-2xl text-text-gray no-underline hover:text-flag-red transition-colors ease-linear duration-100 phone-sm:text-[8vw]"><h1>Ekonomi Köşesi</h1></a>
-            <ul id="navMenu" class="items-center w-[840px] tablet:hidden flex">
-                <li id="navMenuItem" class="pr-[50px]">
-                    <a href="anasayfa.html" class=" text-text-gray text-medium leading-[90px] relative block hover:text-flag-red transition-color ease-linear duration-100">Ana Sayfa</a>
-                </li>
-                <li id="navMenuItem" class="pr-[50px]">
-                    <a href="" class=" text-text-gray text-medium leading-[90px] relative block hover:text-flag-red transition-color ease-linear duration-100">Gazete Manşetleri</a>
-                </li>
-                <li id="navMenuItem" class="pr-[50px]">
-                    <a id="news" href="kategori.html" class=" text-text-gray text-medium leading-[90px] relative flex items-center">
-                        <span class="hover:text-flag-red transition-color ease-linear duration-100 redLine">Haberler</span>
-                    </a>
-                    <ul id="newsSubMenu" class="absolute top-auto bg-white w-[220px] transition-all ease duration-500 translate-y-[20px] opacity-0 pointer-events-none shadow-[0_0_20px_rgba(0,0,0,0.6)]">
-                        <li class="text-xl font-normal text-text-gray px-[1.5em] py-[1em] relative cursor-pointer after:bg-sub-menu-border after:h-[1px] after:block after:absolute after:bottom-0 after:left-[1.5em] after:right-[1.5em] hover:shadow-[inset_5px_0_0_0_#e62b34] hover:text-flag-red transition-color ease transition-shadow duration-300"><a href="https://ekonomikosesi.com/magazin/" class="text-xl leading-[1.8]">Magazin</a></li>
-                        <li class="text-xl font-normal text-text-gray px-[1.5em] py-[1em] relative cursor-pointer after:bg-sub-menu-border after:h-[1px] after:block after:absolute after:bottom-0 after:left-[1.5em] after:right-[1.5em] hover:shadow-[inset_5px_0_0_0_#e62b34] hover:text-flag-red transition-color ease transition-shadow duration-300"><a href="https://ekonomikosesi.com/dunya/" class="text-xl leading-[1.8]">Dünya</a></li>
-                        <li class="text-xl font-normal text-text-gray px-[1.5em] py-[1em] relative cursor-pointer after:bg-sub-menu-border after:h-[1px] after:block after:absolute after:bottom-0 after:left-[1.5em] after:right-[1.5em] hover:shadow-[inset_5px_0_0_0_#e62b34] hover:text-flag-red transition-color ease transition-shadow duration-300"><a href="https://ekonomikosesi.com/spor/" class="text-xl leading-[1.8]">Spor</a></li>
-                        <li class="text-xl font-normal text-text-gray px-[1.5em] py-[1em] relative cursor-pointer after:bg-sub-menu-border after:h-[1px] after:block after:absolute after:bottom-0 after:left-[1.5em] after:right-[1.5em] hover:shadow-[inset_5px_0_0_0_#e62b34] hover:text-flag-red transition-color ease transition-shadow duration-300"><a href="https://ekonomikosesi.com/egitim/" class="text-xl leading-[1.8]">Eğitim</a></li>
-                        <li class="text-xl font-normal text-text-gray px-[1.5em] py-[1em] relative cursor-pointer after:bg-sub-menu-border after:h-[1px] after:block after:absolute after:bottom-0 after:left-[1.5em] after:right-[1.5em] hover:shadow-[inset_5px_0_0_0_#e62b34] hover:text-flag-red transition-color ease transition-shadow duration-300"><a href="https://ekonomikosesi.com/ekonomi/" class="text-xl leading-[1.8]">Ekonomi</a></li>
-                        <li class="text-xl font-normal text-text-gray px-[1.5em] py-[1em] relative cursor-pointer after:bg-sub-menu-border after:h-[1px] after:block after:absolute after:bottom-0 after:left-[1.5em] after:right-[1.5em] hover:shadow-[inset_5px_0_0_0_#e62b34] hover:text-flag-red transition-color ease transition-shadow duration-300"><a href="https://ekonomikosesi.com/finans/" class="text-xl leading-[1.8]">Finans</a></li>
-                        <li class="text-xl font-normal text-text-gray px-[1.5em] py-[1em] relative cursor-pointer after:bg-sub-menu-border after:h-[1px] after:block after:absolute after:bottom-0 after:left-[1.5em] after:right-[1.5em] hover:shadow-[inset_5px_0_0_0_#e62b34] hover:text-flag-red transition-color ease transition-shadow duration-300"><a href="https://ekonomikosesi.com/genel/" class="text-xl leading-[1.8]">Genel</a></li>
-                        <li class="text-xl font-normal text-text-gray px-[1.5em] py-[1em] relative cursor-pointer after:bg-sub-menu-border after:h-[1px] after:block after:absolute after:bottom-0 after:left-[1.5em] after:right-[1.5em] hover:shadow-[inset_5px_0_0_0_#e62b34] hover:text-flag-red transition-color ease transition-shadow duration-300"><a href="https://ekonomikosesi.com/is-dunyasi/" class="text-xl leading-[1.8]">İş Dünyası</a></li>
-                        <li class="text-xl font-normal text-text-gray px-[1.5em] py-[1em] relative cursor-pointer after:bg-sub-menu-border after:h-[1px] after:block after:absolute after:bottom-0 after:left-[1.5em] after:right-[1.5em] hover:shadow-[inset_5px_0_0_0_#e62b34] hover:text-flag-red transition-color ease transition-shadow duration-300"><a href="https://ekonomikosesi.com/seyahat/" class="text-xl leading-[1.8]">Seyahat</a></li>
-                        <li class="text-xl font-normal text-text-gray px-[1.5em] py-[1em] relative cursor-pointer after:bg-sub-menu-border after:h-[1px] after:block after:absolute after:bottom-0 after:left-[1.5em] after:right-[1.5em] hover:shadow-[inset_5px_0_0_0_#e62b34] hover:text-flag-red transition-color ease transition-shadow duration-300"><a href="https://ekonomikosesi.com/sinema/" class="text-xl leading-[1.8]">Sinema</a></li>
-                    </ul>
-                </li>
-                <li id="navMenuItem" class="pr-[50px]">
-                    <a href="hakkımızda.html" class=" text-text-gray text-medium leading-[90px] relative block hover:text-flag-red transition-color ease-linear duration-100">Hakkımızda</a>
-                </li>
-                <li id="navMenuItem" class="pr-[50px]">
-                    <a href="iletisim.html" class=" text-text-gray text-medium leading-[90px] relative block hover:text-flag-red transition-color ease-linear duration-100">İletişim</a>
-                </li>
-                <li id="navMenuItem" class="relative pr-[50px]">
-                    <a id="languages" href=""class="text-text-gray text-medium leading-[90px] relative flex items-center"><img class="" src="https://ekonomikosesi.com/wp-content/plugins/sitepress-multilingual-cms/res/flags/tr.png" alt=""><span class="ml-1 hover:text-flag-red transition-color ease-linear duration-100 tooltip">Türkçe
-                        <span class="fixed text-text-gray font-normal bg-white text-[10px] p-[7px] h-[20px] items-center justify-center border-t border-l border-r border-text-gray hidden z-20">Türkçe</span>
-                    </span></a>
-                    <ul id="languageSubMenu" class="absolute top-auto bg-white w-[220px] left-auto right-0 transition-all ease duration-500 translate-y-[20px] opacity-0 pointer-events-none shadow-[0_0_20px_rgba(0,0,0,0.6)]">
-                        <li class="text-xl font-normal text-text-gray px-[1.5em] py-[1em] relative cursor-pointer after:bg-sub-menu-border after:h-[1px] after:block after:absolute after:bottom-0 after:left-[1.5em] after:right-[1.5em] hover:shadow-[inset_5px_0_0_0_#e62b34] hover:text-flag-red transition-color ease transition-shadow duration-300"><a href="https://ekonomikosesi.com/magazin/" class="text-xl leading-[1.8] flex items-center"><img src="https://ekonomikosesi.com/wp-content/plugins/sitepress-multilingual-cms/res/flags/en.png" alt=""><span class="ml-1">English (İngilizce)</span></a></li>
-                        <li class="text-xl font-normal text-text-gray px-[1.5em] py-[1em] relative cursor-pointer after:bg-sub-menu-border after:h-[1px] after:block after:absolute after:bottom-0 after:left-[1.5em] after:right-[1.5em] hover:shadow-[inset_5px_0_0_0_#e62b34] hover:text-flag-red transition-color ease transition-shadow duration-300"><a href="https://ekonomikosesi.com/dunya/" class="text-xl leading-[1.8] flex items-center"><img src="https://ekonomikosesi.com/wp-content/plugins/sitepress-multilingual-cms/res/flags/fr.png" alt=""><span class="ml-1">Français (Fransızca)</span></a></li>
-                    </ul>
-                </li>
-                <li>
-                    <i id="searchIcon" class='bx bx-search text-text-gray w-[14px]  tablet:hidden block cursor-pointer hover:text-flag-red transition-all ease-linear duration-100'></i>
-                </li>
-            </ul>
-            <nav id="mobileNav" class="fixed z-50 h-[100%] w-[320px] phone-sm:w-[74vw] top-0 left-0 px-[20px] flex flex-col items-center justify-start bg-mobile-menu-bg text-center overflow-y-auto overflow-x-hidden translate-x-[-100%] transition-transform duration-1000 ease-in-expo">
-                <a href="https://ekonomikosesi.com/" class="font-extrabold text-2xl leading-[54px] px-[2em] pb-[0.5em] text-white no-underline hover:text-vivid-red transition-colors ease-linear duration-100 text-center">Ekonomi <br> Köşesi</a>
-                <ul class="flex items-center flex-col before:w-[85px] before:h-[4px] before:bg-vivid-red before:my-[1em] after:w-[85px] after:h-[4px] after:bg-vivid-red after:my-[1em]">
-                    <li class="">
-                        <a href="anasayfa.html" class="text-white text-medium px-[2em] py-[1em] font-semibold relative block hover:text-vivid-red transition-color ease-linear duration-100">Ana Sayfa</a>
+            <h1 id="navHeaderMobil" class="font-extrabold text-[28px] text-text-gray  no-underline hover:text-flag-red transition-colors ease-linear duration-100 phone-sm:text-[8vw]">Ekonomi Köşesi</h1>
+        </div>
+        <div id="navMenuContainer" class="h-full tablet:w-[320px] w-[1200px] mx-auto flex tablet:justify-start justify-between items-center border-b border-b-[rgba(0,0,0,0.2)] tablet:flex-col tablet:bg-mobile-menu-bg tablet:h-[100vh] tablet:fixed tablet:top-0 tablet:left-0 tablet:overflow-y-auto tablet:px-[20px] tablet:translate-x-[-100%] transition-transform duration-1000 ease-in-expo">
+            <a href="anasayfa.html" id="navHeader" class="font-extrabold text-2xl text-text-gray tablet:text-white no-underline hover:text-flag-red transition-colors ease-linear duration-100 phone-sm:text-[8vw] tablet:leading-[54px] tablet:text-[2em] tablet:px-[2em] tablet:text-center tablet:pb-[0.5em]"><h1>Ekonomi Köşesi</h1></a>
+            <div class="flex items-center tablet:flex-col tablet:w-full">
+                <ul id="navMenu" class="items-center w-[840px] flex justify-end tablet:flex-col tablet:w-full tablet:before:h-[4px] tablet:before:w-[85px] tablet:before:bg-flag-red tablet:before:my-[1em] tablet:after:h-[4px] tablet:after:w-[85px] tablet:after:bg-flag-red  tablet:after:my-[1em]">
+                    <li id="navMenuItem" class="pr-[50px] tablet:pr-0">
+                        <a href="anasayfa.html" class=" text-text-gray tablet:text-white text-medium leading-[90px] relative block hover:text-flag-red transition-color ease-linear duration-100 tablet:py-[1em] tablet:px-[2em] tablet:leading-[1.1] ">Ana Sayfa</a>
                     </li>
-                    <li class="">
-                        <a href="" class="text-white text-medium px-[2em] py-[1em] relative block hover:text-vivid-red transition-color ease-linear duration-100">Gazete Manşetleri</a>
+                    <li id="navMenuItem" class="pr-[50px] tablet:pr-0">
+                        <a href="" class=" text-text-gray tablet:text-white text-medium leading-[90px] relative block hover:text-flag-red transition-color ease-linear duration-100 tablet:py-[1em] tablet:px-[2em] tablet:leading-[1.1]">Gazete Manşetleri</a>
                     </li>
-                    <li class="">
-                        <a href="kategori.html" class="text-white text-medium px-[2em] py-[1em] flex items-center justify-center">
-                            <span class="hover:text-vivid-red transition-color ease-linear duration-100 ml-1">Haberler</span>
-                            <i id="newsSubToggleMobile" class="bx bx-chevron-down w-[10px] absolute right-[25px]"></i>
-                        </a>
-                        <ul id="newsSubMenuMobile" class="top-auto transition-height flex-col items-center ease duration-500 h-[0px] hidden">
-                            <li class="text-xl font-normal text-white px-[1.5em] py-[1em] relative cursor-pointer"><a href="https://ekonomikosesi.com/magazin/" class="text-xl leading-[1.8]">Magazin</a></li>
-                            <li class="text-xl font-normal text-white px-[1.5em] py-[1em] relative cursor-pointer"><a href="https://ekonomikosesi.com/dunya/" class="text-xl leading-[1.8]">Dünya</a></li>
-                            <li class="text-xl font-normal text-white px-[1.5em] py-[1em] relative cursor-pointer"><a href="https://ekonomikosesi.com/spor/" class="text-xl leading-[1.8]">Spor</a></li>
-                            <li class="text-xl font-normal text-white px-[1.5em] py-[1em] relative cursor-pointer"><a href="https://ekonomikosesi.com/egitim/" class="text-xl leading-[1.8]">Eğitim</a></li>
-                            <li class="text-xl font-normal text-white px-[1.5em] py-[1em] relative cursor-pointer"><a href="https://ekonomikosesi.com/ekonomi/" class="text-xl leading-[1.8]">Ekonomi</a></li>
-                            <li class="text-xl font-normal text-white px-[1.5em] py-[1em] relative cursor-pointer"><a href="https://ekonomikosesi.com/finans/" class="text-xl leading-[1.8]">Finans</a></li>
-                            <li class="text-xl font-normal text-white px-[1.5em] py-[1em] relative cursor-pointer"><a href="https://ekonomikosesi.com/genel/" class="text-xl leading-[1.8]">Genel</a></li>
-                            <li class="text-xl font-normal text-white px-[1.5em] py-[1em] relative cursor-pointer"><a href="https://ekonomikosesi.com/is-dunyasi/" class="text-xl leading-[1.8]">İş Dünyası</a></li>
-                            <li class="text-xl font-normal text-white px-[1.5em] py-[1em] relative cursor-pointer"><a href="https://ekonomikosesi.com/seyahat/" class="text-xl leading-[1.8]">Seyahat</a></li>
-                            <li class="text-xl font-normal text-white px-[1.5em] py-[1em] relative cursor-pointer"><a href="https://ekonomikosesi.com/sinema/" class="text-xl leading-[1.8]">Sinema</a></li>
+                    <li id="navMenuItem" class="pr-[50px] tablet:pr-0 tablet:flex tablet:flex-col tablet:items-center tablet:justify-center ">
+                        <div id="news" class=" text-text-gray tablet:text-white text-medium leading-[90px] relative flex items-center tablet:justify-center">
+                            <a href="kategori.html" class="hover:text-flag-red transition-color ease-linear duration-100 tablet:py-[1em] tablet:px-[2em] tablet:leading-[1.1] redLine tablet:after:h-0">Haberler</a>
+                            <i id="newsSubToggleMobile" class="bx bx-chevron-down w-[10px] absolute right-[-25px] hidden tablet:block"></i>
+                        </div>
+                        <ul id="newsSubMenu" class="absolute tablet:relative tablet:hidden tablet:translate-y-[0px] tablet:pointer-events-auto tablet:text-center top-auto bg-white tablet:bg-transparent desktop:opacity-0 w-[220px] transition-all ease duration-500 translate-y-[20px] pointer-events-none shadow-[0_0_20px_rgba(0,0,0,0.6)] tablet:shadow-none">
+                            <li class="text-xl tablet:text-[0.9em] tablet:leading-[1.1] font-normal text-text-gray tablet:text-white px-[1.5em] py-[1em] relative cursor-pointer desktop:after:bg-sub-menu-border desktop:after:h-[1px] desktop:after:block desktop:after:absolute desktop:after:bottom-0 desktop:after:left-[1.5em] desktop:after:right-[1.5em] desktop:hover:shadow-[inset_5px_0_0_0_#e62b34] desktop:hover:text-flag-red transition-color ease transition-shadow duration-300"><a href="https://ekonomikosesi.com/magazin/" class="text-xl leading-[1.8]">Magazin</a></li>
+                            <li class="text-xl tablet:text-[0.9em] tablet:leading-[1.1] font-normal text-text-gray tablet:text-white px-[1.5em] py-[1em] relative cursor-pointer desktop:after:bg-sub-menu-border desktop:after:h-[1px] desktop:after:block desktop:after:absolute desktop:after:bottom-0 desktop:after:left-[1.5em] desktop:after:right-[1.5em] desktop:hover:shadow-[inset_5px_0_0_0_#e62b34] desktop:hover:text-flag-red transition-color ease transition-shadow duration-300"><a href="https://ekonomikosesi.com/dunya/" class="text-xl leading-[1.8]">Dünya</a></li>
+                            <li class="text-xl tablet:text-[0.9em] tablet:leading-[1.1] font-normal text-text-gray tablet:text-white px-[1.5em] py-[1em] relative cursor-pointer desktop:after:bg-sub-menu-border desktop:after:h-[1px] desktop:after:block desktop:after:absolute desktop:after:bottom-0 desktop:after:left-[1.5em] desktop:after:right-[1.5em] desktop:hover:shadow-[inset_5px_0_0_0_#e62b34] desktop:hover:text-flag-red transition-color ease transition-shadow duration-300"><a href="https://ekonomikosesi.com/spor/" class="text-xl leading-[1.8]">Spor</a></li>
+                            <li class="text-xl tablet:text-[0.9em] tablet:leading-[1.1] font-normal text-text-gray tablet:text-white px-[1.5em] py-[1em] relative cursor-pointer desktop:after:bg-sub-menu-border desktop:after:h-[1px] desktop:after:block desktop:after:absolute desktop:after:bottom-0 desktop:after:left-[1.5em] desktop:after:right-[1.5em] desktop:hover:shadow-[inset_5px_0_0_0_#e62b34] desktop:hover:text-flag-red transition-color ease transition-shadow duration-300"><a href="https://ekonomikosesi.com/egitim/" class="text-xl leading-[1.8]">Eğitim</a></li>
+                            <li class="text-xl tablet:text-[0.9em] tablet:leading-[1.1] font-normal text-text-gray tablet:text-white px-[1.5em] py-[1em] relative cursor-pointer desktop:after:bg-sub-menu-border desktop:after:h-[1px] desktop:after:block desktop:after:absolute desktop:after:bottom-0 desktop:after:left-[1.5em] desktop:after:right-[1.5em] desktop:hover:shadow-[inset_5px_0_0_0_#e62b34] desktop:hover:text-flag-red transition-color ease transition-shadow duration-300"><a href="https://ekonomikosesi.com/ekonomi/" class="text-xl leading-[1.8]">Ekonomi</a></li>
+                            <li class="text-xl tablet:text-[0.9em] tablet:leading-[1.1] font-normal text-text-gray tablet:text-white px-[1.5em] py-[1em] relative cursor-pointer desktop:after:bg-sub-menu-border desktop:after:h-[1px] desktop:after:block desktop:after:absolute desktop:after:bottom-0 desktop:after:left-[1.5em] desktop:after:right-[1.5em] desktop:hover:shadow-[inset_5px_0_0_0_#e62b34] desktop:hover:text-flag-red transition-color ease transition-shadow duration-300"><a href="https://ekonomikosesi.com/finans/" class="text-xl leading-[1.8]">Finans</a></li>
+                            <li class="text-xl tablet:text-[0.9em] tablet:leading-[1.1] font-normal text-text-gray tablet:text-white px-[1.5em] py-[1em] relative cursor-pointer desktop:after:bg-sub-menu-border desktop:after:h-[1px] desktop:after:block desktop:after:absolute desktop:after:bottom-0 desktop:after:left-[1.5em] desktop:after:right-[1.5em] desktop:hover:shadow-[inset_5px_0_0_0_#e62b34] desktop:hover:text-flag-red transition-color ease transition-shadow duration-300"><a href="https://ekonomikosesi.com/genel/" class="text-xl leading-[1.8]">Genel</a></li>
+                            <li class="text-xl tablet:text-[0.9em] tablet:leading-[1.1] font-normal text-text-gray tablet:text-white px-[1.5em] py-[1em] relative cursor-pointer desktop:after:bg-sub-menu-border desktop:after:h-[1px] desktop:after:block desktop:after:absolute desktop:after:bottom-0 desktop:after:left-[1.5em] desktop:after:right-[1.5em] desktop:hover:shadow-[inset_5px_0_0_0_#e62b34] desktop:hover:text-flag-red transition-color ease transition-shadow duration-300"><a href="https://ekonomikosesi.com/is-dunyasi/" class="text-xl leading-[1.8]">İş Dünyası</a></li>
+                            <li class="text-xl tablet:text-[0.9em] tablet:leading-[1.1] font-normal text-text-gray tablet:text-white px-[1.5em] py-[1em] relative cursor-pointer desktop:after:bg-sub-menu-border desktop:after:h-[1px] desktop:after:block desktop:after:absolute desktop:after:bottom-0 desktop:after:left-[1.5em] desktop:after:right-[1.5em] desktop:hover:shadow-[inset_5px_0_0_0_#e62b34] desktop:hover:text-flag-red transition-color ease transition-shadow duration-300"><a href="https://ekonomikosesi.com/seyahat/" class="text-xl leading-[1.8]">Seyahat</a></li>
+                            <li class="text-xl tablet:text-[0.9em] tablet:leading-[1.1] font-normal text-text-gray tablet:text-white px-[1.5em] py-[1em] relative cursor-pointer desktop:after:bg-sub-menu-border desktop:after:h-[1px] desktop:after:block desktop:after:absolute desktop:after:bottom-0 desktop:after:left-[1.5em] desktop:after:right-[1.5em] desktop:hover:shadow-[inset_5px_0_0_0_#e62b34] desktop:hover:text-flag-red transition-color ease transition-shadow duration-300"><a href="https://ekonomikosesi.com/sinema/" class="text-xl leading-[1.8]">Sinema</a></li>
                         </ul>
                     </li>
-                    <li class="">
-                        <a href="hakkımızda.html" class="text-white text-medium px-[2em] py-[1em] relative block hover:text-vivid-red transition-color ease-linear duration-100">Hakkımızda</a>
+                    <li id="navMenuItem" class="pr-[50px] tablet:pr-0">
+                        <a href="hakkımızda.html" class=" text-text-gray tablet:text-white text-medium leading-[90px] relative block hover:text-flag-red transition-color ease-linear duration-100 tablet:py-[1em] tablet:px-[2em] tablet:leading-[1.1]">Hakkımızda</a>
                     </li>
-                    <li class="">
-                        <a href="iletisim.html" class="text-white text-medium px-[2em] py-[1em] relative block hover:text-vivid-red transition-color ease-linear duration-100">İletişim</a>
+                    <li id="navMenuItem" class="pr-[50px] tablet:pr-0">
+                        <a href="iletisim.html" class=" text-text-gray tablet:text-white text-medium leading-[90px] relative block hover:text-flag-red transition-color ease-linear duration-100 tablet:py-[1em] tablet:px-[2em] tablet:leading-[1.1]">İletişim</a>
                     </li>
-                    <li class="">
-                        <a href="" class="text-white text-medium px-[2em] py-[1em] flex items-center justify-center">
-                            <img class="w-[20px]" src="https://ekonomikosesi.com/wp-content/plugins/sitepress-multilingual-cms/res/flags/tr.png" alt="">
-                            <span class="hover:text-vivid-red transition-color ease-linear duration-100 ml-1">Türkçe</span>
-                            <i id="languageSubToggleMobile" class='bx bx-chevron-down w-[10px] absolute right-[25px]'></i>
-                        </a>
-                        <ul id="languageSubMenuMobile" class="top-auto transition-height flex-col items-center ease duration-500 h-[0px] hidden">
-                            <li class="text-xl font-normal text-white text-center px-[1.5em] py-[1em] relative cursor-pointer"><a href="https://ekonomikosesi.com/magazin/" class="text-xl leading-[1.8] flex items-center"><img src="https://ekonomikosesi.com/wp-content/plugins/sitepress-multilingual-cms/res/flags/en.png" alt=""><span class="ml-1">English (İngilizce)</span></a></li>
-                            <li class="text-xl font-normal text-white text-center px-[1.5em] py-[1em] relative cursor-pointer"><a href="https://ekonomikosesi.com/dunya/" class="text-xl leading-[1.8] flex items-center"><img src="https://ekonomikosesi.com/wp-content/plugins/sitepress-multilingual-cms/res/flags/fr.png" alt=""><span class="ml-1">Français (Fransızca)</span></a></li>
+                    <li id="navMenuItem" class="relative pr-[50px] tablet:pr-0 tablet:flex tablet:flex-col tablet:items-center tablet:justify-center">
+                        <div id="languages" class="text-text-gray tablet:text-white text-medium leading-[90px] relative flex items-center tablet:py-[1em] tablet:px-[2em] tablet:leading-[1.1]">
+                            <img class="" src="https://ekonomikosesi.com/wp-content/plugins/sitepress-multilingual-cms/res/flags/tr.png" alt="">
+                            <a href="" class="ml-1 hover:text-flag-red transition-color ease-linear duration-100 tooltip">Türkçe
+                                <span class="fixed text-text-gray bg-white text-[10px] p-[7px] h-[20px] items-center justify-center border-t border-l border-r border-text-gray hidden">Türkçe</span>   
+                            </a>  
+                            <i id="languageSubToggleMobile" class='bx bx-chevron-down w-[10px] absolute right-[-25px] hidden tablet:block'></i>
+                        </div>
+                        <ul id="languageSubMenu" class="absolute tablet:relative tablet:hidden tablet:translate-y-[0px] tablet:pointer-events-auto tablet:text-center tablet:bg-transparent tablet:shadow-none top-auto bg-white w-[220px] left-auto right-0 transition-all ease duration-500 translate-y-[20px] desktop:opacity-0 pointer-events-none shadow-[0_0_20px_rgba(0,0,0,0.6)]">
+                            <li class="text-xl tablet:text-[0.9em] tablet:leading-[1.1] tablet:text-white tablet:flex tablet:justify-center tablet:items-center font-normal text-text-gray px-[1.5em] py-[1em] relative cursor-pointer after:bg-sub-menu-border after:h-[1px] after:block after:absolute after:bottom-0 after:left-[1.5em] after:right-[1.5em] hover:shadow-[inset_5px_0_0_0_#e62b34] hover:text-flag-red transition-color ease transition-shadow duration-300"><a href="https://ekonomikosesi.com/magazin/" class="text-xl leading-[1.8] flex items-center"><img src="https://ekonomikosesi.com/wp-content/plugins/sitepress-multilingual-cms/res/flags/en.png" alt=""><span class="ml-1">English (İngilizce)</span></a></li>
+                            <li class="text-xl tablet:text-[0.9em] tablet:leading-[1.1] tablet:text-white tablet:flex tablet:justify-center tablet:items-center font-normal text-text-gray px-[1.5em] py-[1em] relative cursor-pointer after:bg-sub-menu-border after:h-[1px] after:block after:absolute after:bottom-0 after:left-[1.5em] after:right-[1.5em] hover:shadow-[inset_5px_0_0_0_#e62b34] hover:text-flag-red transition-color ease transition-shadow duration-300"><a href="https://ekonomikosesi.com/dunya/" class="text-xl leading-[1.8] flex items-center"><img src="https://ekonomikosesi.com/wp-content/plugins/sitepress-multilingual-cms/res/flags/fr.png" alt=""><span class="ml-1">Français (Fransızca)</span></a></li>
                         </ul>
                     </li>
+                 
                 </ul>
-                <div class="border-b w-full border-b-border-color">
-                    <i id="searchIconMobil" class='bx bx-search text-white w-[14px] mt-[3em]'></i>
+                <div class="tablet:border-b tablet:w-full tablet:border-b-border-color flex justify-center items-center tablet:mt-[3em]">
+                    <i id="searchIcon" class='bx bx-search text-text-gray tablet:text-white w-[14px] block cursor-pointer hover:text-vivid-red transition-all ease-linear duration-100 tablet:pb-[5px]'></i>
                 </div>
-                
-            </nav>
+            </div>
         </div>
     </nav>
     <div id="searchDiv" class="fixed top-0 w-full h-[100vh] bg-white z-50 flex justify-center items-center transition-all duration-1000 opacity-0 translate-y-[100%]">
