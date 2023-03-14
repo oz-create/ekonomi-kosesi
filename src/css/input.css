@@ -171,11 +171,11 @@ input:checked~span:nth-last-child(2) {
   }
 }
 
-  @media (max-width:1200px) {
-    .swiper-pagination-bullet{
-        width: calc(90%/4);
-    }
-    .swiper-button-next, .swiper-button-prev{
-        display: none;
-    }
+@media (max-width:1200px) {
+  .swiper-pagination-bullet{
+      width: calc(90%/4);
   }
+  .swiper-button-next, .swiper-button-prev{
+      display: none;
+  }
+}

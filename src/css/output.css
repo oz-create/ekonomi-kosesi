@@ -2964,36 +2964,16 @@ input:checked~span:nth-last-child(2) {
 }
 
 @media (max-width: 360px) {
-  .phone-sm\:left-\[70vw\] {
-    left: 70vw;
-  }
-
   .phone-sm\:left-\[80vw\] {
     left: 80vw;
   }
 
-  .phone-sm\:w-\[280px\] {
-    width: 280px;
+  .phone-sm\:w-\[85vw\] {
+    width: 85vw;
   }
 
   .phone-sm\:w-full {
     width: 100%;
-  }
-
-  .phone-sm\:w-\[80\%\] {
-    width: 80%;
-  }
-
-  .phone-sm\:w-\[80vw\] {
-    width: 80vw;
-  }
-
-  .phone-sm\:w-\[90vw\] {
-    width: 90vw;
-  }
-
-  .phone-sm\:w-\[85vw\] {
-    width: 85vw;
   }
 
   .phone-sm\:text-\[8vw\] {
