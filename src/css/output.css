@@ -1989,7 +1989,7 @@ body{
 
 #menuToggle input:checked~span {
   opacity: 1;
-  transform: rotate(45deg) translate(1px, 0px);
+  transform: rotate(45deg) translate(1px, -1px);
   background: #cf2e2e !important;
 }
 
@@ -2090,6 +2090,10 @@ input:checked~span:nth-last-child(2) {
   display: flex;
   position:fixed;
   overflow:hidden;
+}
+
+.chevronToggleClass{
+  transform: rotate(180deg);
 }
 
 @media (min-width:1200px) {

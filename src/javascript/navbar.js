@@ -5,13 +5,11 @@ document.getElementById("menuToggle").addEventListener("click",()=>{
 })
 document.getElementById("newsSubToggleMobile").addEventListener("click",()=>{
     document.getElementById("newsSubMenu").classList.toggle("subMenuMobile");
-    document.getElementById("newsSubToggleMobile").classList.toggle("bx-chevron-up");
-    document.getElementById("newsSubToggleMobile").classList.toggle("bx-chevron-down");
+    document.getElementById("newsSubToggleMobile").classList.toggle("chevronToggleClass");
 })
 document.getElementById("languageSubToggleMobile").addEventListener("click",()=>{
   document.getElementById("languageSubMenu").classList.toggle("subMenuMobile");
-  document.getElementById("languageSubToggleMobile").classList.toggle("bx-chevron-up");
-  document.getElementById("languageSubToggleMobile").classList.toggle("bx-chevron-down");
+  document.getElementById("languageSubToggleMobile").classList.toggle("chevronToggleClass");
 })
 document.getElementById("searchIcon").addEventListener('click',()=>{
   document.getElementById("searchDiv").classList.add("searchDivShow")
