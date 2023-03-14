@@ -1949,7 +1949,7 @@ body{
 }
 
 .subMenuMobile{
-  display: block !important;
+  max-height: 500px !important;
 }
 
 .navMenuToggle{
@@ -2566,6 +2566,10 @@ input:checked~span:nth-last-child(2) {
 }
 
 @media (max-width: 1240px) {
+  .tablet\:pointer-events-none {
+    pointer-events: none;
+  }
+
   .tablet\:pointer-events-auto {
     pointer-events: auto;
   }
@@ -2626,6 +2630,10 @@ input:checked~span:nth-last-child(2) {
     height: 761px;
   }
 
+  .tablet\:max-h-0 {
+    max-height: 0px;
+  }
+
   .tablet\:w-\[320px\] {
     width: 320px;
   }
@@ -2666,6 +2674,10 @@ input:checked~span:nth-last-child(2) {
 
   .tablet\:justify-center {
     justify-content: center;
+  }
+
+  .tablet\:overflow-hidden {
+    overflow: hidden;
   }
 
   .tablet\:overflow-y-auto {

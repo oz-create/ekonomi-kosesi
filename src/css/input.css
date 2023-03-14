@@ -30,7 +30,7 @@ body{
 }
 
 .subMenuMobile{
-  display: block !important;
+  max-height: 500px !important;
 }
 .navMenuToggle{
     transform-origin: 25px 0;

@@ -3,11 +3,11 @@ document.getElementById("menuToggle").addEventListener("click",()=>{
     document.getElementById("menuToggle").classList.toggle("menuToggleClass");
     document.getElementById("navHeaderMobil").classList.toggle("navHeaderToggleClass");
 })
-document.getElementById("newsSubToggleMobile").addEventListener("click",()=>{
+document.getElementById("news").addEventListener("click",()=>{
     document.getElementById("newsSubMenu").classList.toggle("subMenuMobile");
     document.getElementById("newsSubToggleMobile").classList.toggle("chevronToggleClass");
 })
-document.getElementById("languageSubToggleMobile").addEventListener("click",()=>{
+document.getElementById("languages").addEventListener("click",()=>{
   document.getElementById("languageSubMenu").classList.toggle("subMenuMobile");
   document.getElementById("languageSubToggleMobile").classList.toggle("chevronToggleClass");
 })
